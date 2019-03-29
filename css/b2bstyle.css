@@ -1,0 +1,74 @@
+/**平台b2bcss文件**/
+
+/**block buttons**/
+.docket .block_btns{
+	float:right;
+	margin:3px;
+}
+.docket .block_btns a{
+	margin-left:5px;
+}
+/**customer address manager**/
+.docket .areaLabel{
+	background-color: #F7F7F7;
+	width: 18%;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	line-height: 28px;
+	font-weight: normal;
+	text-align: right;
+	padding-right: 12px
+}
+/**jor report style**/
+.jor_grid_report {
+	background-image: -o-linear-gradient(top, #fff, #eee);
+	background-image: linear-gradient(top, #fff, #eee);
+	background: #FBFBFB url("../imgs/grid_bg.jpg") repeat-x 0 0;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+}
+.jor_grid_report p{
+	text-align: center;
+}
+/**match result**/
+.matchResult{
+	border: 1px solid #eee;
+	padding: 10px;
+	line-height: 28px;
+	font-size: 12px;
+}
+.matchResult .subblock{
+	font-weight: bold;
+	background: rgb(231,239,250);
+    color: #000;
+    border-bottom: 0 none;
+    border-color: #eee;
+}
+.matchResult .result{
+	display: inline-block;
+	width:250px;
+	border: 1px solid #eee;
+}
+.matchResult .result_diff{
+	display: inline-block;
+	width:100px;
+	border: 1px solid #eee;
+}
+
+.verificate tr.total td{
+	text-align:center;font-size:14px;font-weight:bold;background-color:#DAD9F9;
+}
+.verificate tr.total_title td{
+	text-align:center;font-weight:bold;
+}
+
+.modal-body .docket .docketTypes{z-index:2;}
+.modal-body .docket .docketList{z-index:1;}
+.modal-body .docket .legend .actions{
+	position:absolute;
+	top:20px;
+	left:670px;
+	width:200px;
+	margin-top:0!important
+}

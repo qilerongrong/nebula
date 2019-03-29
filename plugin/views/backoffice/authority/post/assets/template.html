@@ -1,0 +1,75 @@
+<div class="post">
+	<form  class="form-horizontal">
+	  <fieldset class="view">
+	    <div class="legend">
+	    	岗位
+			<span class="btn-group group_view" style="float:right"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		    <span class="btn-group group_edit" style="float:right;display:none;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+        </div>
+	    <div class="control-group">
+	      <label class="control-label" for="input01">岗位编码：</label>
+	      <div class="controls" data-key="code">
+			<p class="view_text readonly"></p>
+	      </div>
+	    </div>
+		<div class="control-group span6">
+	      <label class="control-label" for="input01">岗位名称：</label>
+	      <div class="controls" data-key="name">
+	        <input type="text" class="input-xlarge edit_input" id="input01">
+			<p class="view_text">GMZBA012550016</p>
+	      </div>
+	    </div>
+		<div class="control-group span6">
+	      <label class="control-label" for="input01">岗位备注：</label>
+	      <div class="controls" data-key="description">
+	        <input type="text" class="input-xxlarge edit_input" id="input01">
+			<p class="view_text">GMZBA012550016</p>
+	      </div>
+	    </div>
+	  </fieldset>
+	</form>
+<form class="form-horizontal">
+	  <fieldset>
+	    <div class="legend">
+	    	管理范围
+			 <span class="btn-group group_edit" style="float:right;"><a id="matchset" class="btn btn-success btn-mini" href="javascript:void(0);"><i class="icon-asterisk icon-white"></i>设置</a></span>
+		</div>
+	    <div class="control-group span6">
+	      <label class="control-label" for="input01">公司代码：</label>
+	      <div class="controls">
+	        <p>*</p>
+	      </div>
+	    </div>
+		<div class="control-group span6">
+	      <label class="control-label" for="input01">商品编码：</label>
+	      <div class="controls">
+	        <p>*</p>
+	      </div>
+	    </div>
+		<div class="control-group span6">
+	      <label class="control-label" for="input01">品牌编码：</label>
+	      <div class="controls">
+	        <p>*</p>
+	      </div>
+	    </div>
+		<div class="control-group span6">
+	      <label class="control-label" for="input01">品类编码：</label>
+	      <div class="controls">
+	        <p>*</p>
+	      </div>
+	    </div>
+		
+	  </fieldset>
+	</form>
+	<form class="form-horizontal">
+	  <fieldset>
+	    <div class="legend">
+	    	角色
+			<span class="btn-group view" style="float:right"><a class="btn btn-mini btn-success view_roles" href="javascript:void(0);"><i class="icon-white icon-search"></i> 查看</a></span>
+		</div>
+	    <div class="control-group span6">
+	    	<div class='rolelist'></div>
+	    </div>
+	  </fieldset>
+	</form>
+</div>

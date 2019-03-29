@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<project name="vv" default="deploy" >
+<target name="deploy">
+<delete dir="D:/xampp/htdocs/vv"/>
+<copy todir="D:/xampp/htdocs/vv">
+      <fileset dir="."/>
+ </copy>
+</target>
+</project>

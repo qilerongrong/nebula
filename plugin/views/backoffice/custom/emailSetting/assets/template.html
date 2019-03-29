@@ -1,0 +1,53 @@
+<div class="post">
+	<form class="form-horizontal v-form">
+	  <fieldset class="view">
+	    <div class="legend">
+	    	邮件设置
+		    <span class="btn-group group_view" style="float:right"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		    <span class="btn-group group_edit" style="float:right;display:none;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+        </div>
+	    <div class="control-group">
+	      <label class="control-label" for="input01"><span style="color: red">*</span>服务域名：</label>
+	      <div class="controls" data-key="host">
+	      	<input type="text" class="input-xlarge edit_input"  data-validator="text(0,30)" data-required="true"  id="input01" >
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+		<div class="control-group">
+	      <label class="control-label" for="input01"><span style="color: red">*</span>邮件端口号：</label>
+	      <div class="controls" data-key="port">
+	        <input type="text" class="input-xlarge edit_input" data-validator="text(0,30)" data-required="true"  id="input01">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+		<div class="control-group">
+	      <label class="control-label" for="input01"><span style="color: red">*</span>邮件地址：</label>
+	      <div class="controls" data-key="fromEmeil">
+	        <input type="text" class="input-xlarge edit_input"  data-validator="email(0,30)" data-required="true" id="input01">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    <div class="control-group">
+	      <label class="control-label" for="input01"><span style="color: red">*</span>用户名：</label>
+	      <div class="controls" data-key="userName">
+	        <input type="text" class="input-xlarge edit_input" data-validator="text(0,30)" data-required="true"  id="input01">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    <div class="control-group">
+	      <label class="control-label" for="input01"><span style="color: red">*</span>密码：</label>
+	      <div class="controls" data-key="password">
+	        <input type="password" class="input-xlarge edit_input" data-validator="text(0,30)" data-required="true"  id="input01">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    <div class="control-group">
+	      <label class="control-label" for="input01">是否验证：</label>
+	      <div class="controls" data-key="auth">
+	        <input type="checkbox"  class="input-xlarge edit_input" id="input01">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	  </fieldset>
+	</form>
+</div>

@@ -1,0 +1,120 @@
+<div class="post">
+	<form  class="form-horizontal v-form">
+		<fieldset class="edit">
+			<div class="legend">
+				规则设定
+				<span class="btn-group group_view" style="float:right;display:none;"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a><a class="btn cancel btn-danger  btn-mini back" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 返回</a></span>
+				<span class="btn-group group_edit" style="float:right;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+			</div>
+			<div class="messageTemplate">
+				<div class="control-group">
+					<label class="control-label" for="input01">选择模板：</label>
+					<div class="controls" data-key="templateId" data-type="select">
+						<select id="templateId" class="input-xlarge  edit_input"  >
+						</select>
+						<p class="view_text"></p><p class="error_msg" ></p>
+					</div>
+				</div>
+				<div class="control-group" style="display:none">
+					<label class="control-label" for="input01">模块编码：</label>
+					<div class="controls" data-key="moduleCode">
+						<input type="text" class="input-xlarge  edit_input"  readonly/>
+						<p class="view_text"></p><p class="error_msg" ></p>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input01">模块名称：</label>
+					<div class="controls" data-key="moduleName">
+						<input type="text" class="input-xlarge  edit_input"  readonly/>
+						<p class="view_text"></p><p class="error_msg" ></p>
+					</div>
+				</div>
+				<div class="control-group" style="display:none">
+					<label class="control-label" for="input01">单据编码：</label>
+					<div class="controls" data-key="entityType">
+						<input type="text" class="input-xlarge  edit_input"   readonly/>
+						<p class="view_text"></p><p class="error_msg" ></p>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="input01">单据名称：</label>
+					<div class="controls" data-key="entityName">
+						<input type="text" class="input-xlarge  edit_input"   readonly/>
+						<p class="view_text"></p><p class="error_msg" ></p>
+					</div>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">操作：</label>
+				<div class="controls" data-key="actionName" data-type="select">
+					<select  class="input-xlarge  edit_input actionName"  >
+				        <option value="insert">新增</option>
+						<option value="update">修改</option>
+						<option value="delete">删除</option>
+					</select>
+				</div>
+			</div>
+			<div class="messageRule">
+			<div class="control-group">
+				<label class="control-label" for="input01">可控状态：</label>
+				<div class="controls" data-key="controlStatus" data-type="select">
+					<select id="controlStatus" class="input-xlarge  edit_input" >
+						<option value="">请选择</option>
+					</select>
+					<p class="view_text"></p><p class="error_msg" ></p>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">规则点：</label>
+				<div class="controls" data-key="rulePointMap" data-type="select">
+					<!--select id="rulePoint" class="input-xlarge  edit_input"  data-validator="text(0,200)" data-required="true">
+						<option value="">请选择</option>
+					</select-->
+                    <div class="edit_input">
+                        <select class="operator input-medium"></select>
+                        <span class="vals">
+                            
+                        </span>
+						<span>（如果是时间类型，输入格式为：YYYYMMDD）</span>
+                    </div>
+					<p class="view_text"></p><p class="error_msg" ></p>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">发送对象：</label>
+				<div class="controls" data-key="sendType">
+					<span>购方</span>
+					<input type="checkbox" value="1" id="input01" name="sendType" checked/>
+					<span>销方</span>
+					<input  type="checkbox" value="2" id="input02" name="sendType" />
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">发送消息：</label>
+				<div class="controls" data-key="isNotice" data-type="checkbox">
+					<input type="checkbox" class="input-xlarge  edit_input" id="input01" >
+					<p class="view_text"></p><p class="error_msg" ></p>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">发送邮件：</label>
+				<div class="controls" data-key="isEmail" data-type="checkbox">
+					<input  type="checkbox" class="input-xlarge  edit_input" id="input01" data-validator="text(0,100)" data-required="false" >
+					<p class="view_text"></p><p class="error_msg" ></p>
+				</div>
+			</div>
+			
+			<!--  暂时不用
+			<div class="control-group">
+				<label class="control-label" for="input01">发送短信：</label>
+				<div class="controls" data-key="isMessage" data-type="checkbox">
+					<input  type="checkbox" class="input-xlarge  edit_input" id="input01" data-validator="text(0,100)" data-required="true" >
+					<p class="view_text"></p>
+				</div>
+			</div>
+			-->
+			</div>
+		</fieldset>
+	</form>
+
+</div>

@@ -1,0 +1,79 @@
+<div class="ticketCustom docket">
+	<div  class="form-inline">
+		<div class="control-group top">
+		<div class="alert msg">
+			  <button class="close" data-dismiss="alert">×</button>
+			  <strong>提醒：</strong><span class="msginfo"></span>
+		</div>
+		 
+		<label class="partyName" style="font-size:x-small;font-weight:bold;"></label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<label class="checkbox">
+		   	系统模组：<select id="moduleId" class="modulesType input-medium"></select>
+		</label>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<label class="checkbox">
+		   	 选择表单类型：<select class="ticketsType input-medium"></select>
+		</label>
+		
+		&nbsp;&nbsp;
+		
+		<label class="checkbox lbl_tableType">
+			 选择表单结构：
+		 <select class="tableType input-small">
+		 	<option value="true">主从</option>
+			<option value="false">单表</option>
+		 </select>
+		 </label>
+		 &nbsp;&nbsp;&nbsp;
+		 
+		 <label class="checkbox" id="isAll" style="display:none">
+			   是否同步中心企业<input type="checkbox" name="isAll" checked="checked"/>
+		 </label>
+		 <label class="checkbox" >
+		 	<a  class="btn createCustom" href="javascript:void(0);" title="创建">拷贝创建</a>
+		 	<a  class="btn extendCustom" href="javascript:void(0);" title="继承">继承创建</a>
+		 	<a  class="btn deleteCustom" href="javascript:void(0);" title="删除">删除表单</a>
+		 	<a  class="btn importType" href="javascript:void(0);" title="导入">导入表单</a>
+		 	<a class="btn exportType" href="javascript:void(0);" title="导出">导出表单</a>
+		 </label>
+		 <!--div id="addtype" style="float:right">
+		 <input type="button" class="btn-mini btn-primary addtype" value="新增类型"/>
+		 <input type="button" class="btn-mini btn-primary printpreview" value="打印"/> 
+		 </div-->
+		  </div>
+		  <ul class="nav nav-tabs docketTypes">
+		  	<li class="tab-docket active"><a href="javascript:void(0);">表单字段设置</a></li>
+		  	<li class="tab-docket"><a href="javascript:void(0);">表单设置</a></li>
+		  	<li class="tab-docket"><a href="javascript:void(0);">从表</a></li>
+		  </ul>
+		  <div class="tab-content">
+			<div class="tab-pane active">
+				<div class="ticketHeader">
+					<div class="actions" style="margin: 5px 0;"><div class="btn-group viewType">
+							<button class="btn type_view active">查看</button>
+							<button class="btn type_edit">编辑</button>
+							<button class="btn type_list">列表</button>
+							<button class="btn type_setting">设置</button>
+	                </div>
+	                <!--input type="button" class="btn btn-primary addBlock" value="新增块"/-->
+                </div>
+				<div class="block_con"></div>
+			</div>  
+		   </div>
+		    <div class="tab-pane">
+		  	<div class="ticketConfig">
+		  	   <div class="actions" style="margin: 5px 0;"><input type="button" class="btn btn-primary saveDocketType" value="保存"/></div>
+			  <div class="block_con"></div>
+			</div>
+		   </div>
+		  <div class="tab-pane">
+		  	<div class="ticketDetail">
+		  	   <div class="actions" style="margin-top: 5px;"><input type="button" class="btn btn-primary addDetailDocket" value="新增从表"/></div>
+			  <div class="block_con"></div>
+			</div>
+		   </div>
+	</div>
+</div>

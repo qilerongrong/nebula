@@ -1,0 +1,510 @@
+<div class="form-horizontal v-form">
+    <div class="hidden">
+        <input type="hidden" name="id" value="">
+    </div>
+    <table class="">
+        <tbody>
+            <tr>
+                <th class="">
+                    <span class="required">*</span>{GatewayLang.Schedule.task_name}:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="triggerName" value="" data-validator="text(0,100)" data-required="true">
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr>
+                <th class="">
+                 {GatewayLang.Schedule.desc}:
+                </th>
+                <td>
+                    <div>
+                        <textarea class="input-large" name="triggerDesc" rows = "3"></textarea>
+						<p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr>
+                <th class="">
+                    {GatewayLang.Schedule.Task_parameters}:
+                </th>
+                <td>
+                    <div>
+                        <textarea class="input-large" name="config" rows = "3"></textarea>
+                        	{GatewayLang.Schedule.Format}:key=value {GatewayLang.Schedule.Each_parameter_is_a_line}
+						<p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			 <tr>
+			 	<td colspan='2'>
+			 		<table class="aptSelect" style="margin-left:85px;width:300px;">
+					
+					</table>
+			 	</td>
+			</tr>
+            <tr>
+                <th class="">
+                   {GatewayLang.Schedule.Trigger_mode}:
+                </th>
+                <td>
+                    <div>
+                        <div class="form_checkbox">
+                            <!--input type="radio" name="runType" checked value="-1"-->
+							<!--span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Manual_trigger}</span-->
+							<input type="radio" name="runType" value="0">
+							<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Calendar_cycle_trigger}</span>
+							<input type="radio" name="runType" value="1">
+							<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Fixed_time_trigger}</span>
+							<input type="radio" name="runType" value="2">
+							<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Advanced}</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+			<tr class="cron" style="display:none">
+                <th class="">
+         CRON{GatewayLang.Schedule.Expression}:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="cron" value="" >{GatewayLang.Schedule.Format}：
+						{GatewayLang.Schedule.Second} {GatewayLang.Schedule.Minute} {GatewayLang.Schedule.Hour} {GatewayLang.Schedule.Days_of_the_month} 
+						{GatewayLang.Schedule.Month} {GatewayLang.Schedule.Day_of_the_week} {GatewayLang.Schedule.Year}
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+             <tr class="fixed" style="display:none">
+                <th class="">
+                   {GatewayLang.Schedule.Time_interval}:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="repeatInterval" value="" >
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="fixed" style="display:none">
+                <th class="">
+                   {GatewayLang.Schedule.Execution_times}:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="repeatCount" value="" >{GatewayLang.Schedule.unlimited}
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="week" style="display:none">
+                <th class="">
+                   {GatewayLang.Schedule.Trigger_time}:
+                </th>
+                <td>
+                    <div>
+                        <select name="hour" style="width:45px;" id="hour">
+						    <option value="0">0</option>
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						    <option value="13">13</option>
+						    <option value="14">14</option>
+						    <option value="15">15</option>
+						    <option value="16">16</option>
+						    <option value="17">17</option>
+						    <option value="18">18</option>
+						    <option value="19">19</option>
+						    <option value="20">20</option>
+						    <option value="21">21</option>
+						    <option value="22">22</option>
+						    <option value="23">23</option>
+						</select>{GatewayLang.Schedule.Hour}
+						<select name="minute" style="width:45px;" id="minute">
+							    <option value="0">0</option>
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							    <option value="6">6</option>
+							    <option value="7">7</option>
+							    <option value="8">8</option>
+							    <option value="9">9</option>
+							    <option value="10">10</option>
+							    <option value="11">11</option>
+							    <option value="12">12</option>
+							    <option value="13">13</option>
+							    <option value="14">14</option>
+							    <option value="15">15</option>
+							    <option value="16">16</option>
+							    <option value="17">17</option>
+							    <option value="18">18</option>
+							    <option value="19">19</option>
+							    <option value="20">20</option>
+							    <option value="21">21</option>
+							    <option value="22">22</option>
+							    <option value="23">23</option>
+							    <option value="24">24</option>
+							    <option value="25">25</option>
+							    <option value="26">26</option>
+							    <option value="27">27</option>
+							    <option value="28">28</option>
+							    <option value="29">29</option>
+							    <option value="30">30</option>
+							    <option value="31">31</option>
+							    <option value="32">32</option>
+							    <option value="33">33</option>
+							    <option value="34">34</option>
+							    <option value="35">35</option>
+							    <option value="36">36</option>
+							    <option value="37">37</option>
+							    <option value="38">38</option>
+							    <option value="39">39</option>
+							    <option value="40">40</option>
+							    <option value="41">41</option>
+							    <option value="42">42</option>
+							    <option value="43">43</option>
+							    <option value="44">44</option>
+							    <option value="45">45</option>
+							    <option value="46">46</option>
+							    <option value="47">47</option>
+							    <option value="48">48</option>
+							    <option value="49">49</option>
+							    <option value="50">50</option>
+							    <option value="51">51</option>
+							    <option value="52">52</option>
+							    <option value="53">53</option>
+							    <option value="54">54</option>
+							    <option value="55">55</option>
+							    <option value="56">56</option>
+							    <option value="57">57</option>
+							    <option value="58">58</option>
+							    <option value="59">59</option>
+							</select>
+						{GatewayLang.Schedule.Minute}
+						<select name="second" style="width:45px;" id="second">
+							    <option value="0">0</option>
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							    <option value="6">6</option>
+							    <option value="7">7</option>
+							    <option value="8">8</option>
+							    <option value="9">9</option>
+							    <option value="10">10</option>
+							    <option value="11">11</option>
+							    <option value="12">12</option>
+							    <option value="13">13</option>
+							    <option value="14">14</option>
+							    <option value="15">15</option>
+							    <option value="16">16</option>
+							    <option value="17">17</option>
+							    <option value="18">18</option>
+							    <option value="19">19</option>
+							    <option value="20">20</option>
+							    <option value="21">21</option>
+							    <option value="22">22</option>
+							    <option value="23">23</option>
+							    <option value="24">24</option>
+							    <option value="25">25</option>
+							    <option value="26">26</option>
+							    <option value="27">27</option>
+							    <option value="28">28</option>
+							    <option value="29">29</option>
+							    <option value="30">30</option>
+							    <option value="31">31</option>
+							    <option value="32">32</option>
+							    <option value="33">33</option>
+							    <option value="34">34</option>
+							    <option value="35">35</option>
+							    <option value="36">36</option>
+							    <option value="37">37</option>
+							    <option value="38">38</option>
+							    <option value="39">39</option>
+							    <option value="40">40</option>
+							    <option value="41">41</option>
+							    <option value="42">42</option>
+							    <option value="43">43</option>
+							    <option value="44">44</option>
+							    <option value="45">45</option>
+							    <option value="46">46</option>
+							    <option value="47">47</option>
+							    <option value="48">48</option>
+							    <option value="49">49</option>
+							    <option value="50">50</option>
+							    <option value="51">51</option>
+							    <option value="52">52</option>
+							    <option value="53">53</option>
+							    <option value="54">54</option>
+							    <option value="55">55</option>
+							    <option value="56">56</option>
+							    <option value="57">57</option>
+							    <option value="58">58</option>
+							    <option value="59">59</option>
+							</select>{GatewayLang.Schedule.Second}
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+             <tr class="week" style="display:none">
+                <th class="">
+                  {GatewayLang.Schedule.Circulation_pattern}:
+                </th>
+                <td>
+                    <div>
+			       		<input type="radio" name="clType" id="clType1" checked="checked" value="1"><span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Daily}</span>
+						<input type="radio" name="clType" id="clType2" value="2"><span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Weekly}</span>
+						<input type="radio" name="clType" id="clType3" value="3"><span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Monthly}</span>
+						<input type="radio" name="clType" id="clType4" value="4"><span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Schedule.Every_year}</span>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			  <tr class="week1" style="display:none">
+                <th class="">
+                  {GatewayLang.Schedule.Cycle_value}:
+                </th>
+                <td>
+                    <div>
+			        	<input type="checkbox" name="week" value="1" id="week-1">
+						<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Public.Sunday}</span>
+						<input type="checkbox" name="week" value="2" id="week-2">
+						<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Public.Monday}</span>
+						<input type="checkbox" name="week" value="3" id="week-3">
+						<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Public.Tuesday}</span>
+						<input type="checkbox" name="week" value="4" id="week-4">
+						<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Public.Wednesday}</span>
+						<input type="checkbox" name="week" value="5" id="week-5">
+						<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Public.Thursday}</span>
+						<input type="checkbox" name="week" value="6" id="week-6">
+						<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Public.Friday}</span>
+						<input type="checkbox" name="week" value="7" id="week-7">
+						<span style="margin-left:-10px;margin-right:10px;">{GatewayLang.Public.Saturday}</span>
+						<input type="hidden" id="__multiselect_week" name="__multiselect_week" value=""> 
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr class="week2" style="display:none">
+                <th class="">
+                {GatewayLang.Schedule.Cycle_value}:
+                </th>
+                <td>
+                    <div>
+			        	{GatewayLang.Schedule.The_first_X_days_per_month}<select name="monthday" style="width:45px;" id="monthday">
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						    <option value="13">13</option>
+						    <option value="14">14</option>
+						    <option value="15">15</option>
+						    <option value="16">16</option>
+						    <option value="17">17</option>
+						    <option value="18">18</option>
+						    <option value="19">19</option>
+						    <option value="20">20</option>
+						    <option value="21">21</option>
+						    <option value="22">22</option>
+						    <option value="23">23</option>
+						    <option value="24">24</option>
+						    <option value="25">25</option>
+						    <option value="26">26</option>
+						    <option value="27">27</option>
+						    <option value="28">28</option>
+						    <option value="29">29</option>
+						    <option value="30">30</option>
+						    <option value="31">31</option>
+						</select>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr class="week3" style="display:none">
+                <th class="">
+                  {GatewayLang.Schedule.Cycle_value}::
+                </th>
+                <td>
+                    <div>{GatewayLang.Schedule.Every_year}
+			        	<select name="month" style="width:45px;" id="month">
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						</select>{GatewayLang.Schedule.Month}
+						<select name="day" style="width:45px;" id="day">
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						    <option value="13">13</option>
+						    <option value="14">14</option>
+						    <option value="15">15</option>
+						    <option value="16">16</option>
+						    <option value="17">17</option>
+						    <option value="18">18</option>
+						    <option value="19">19</option>
+						    <option value="20">20</option>
+						    <option value="21">21</option>
+						    <option value="22">22</option>
+						    <option value="23">23</option>
+						    <option value="24">24</option>
+						    <option value="25">25</option>
+						    <option value="26">26</option>
+						    <option value="27">27</option>
+						    <option value="28">28</option>
+						    <option value="29">29</option>
+						    <option value="30">30</option>
+						    <option value="31">31</option>
+						</select>{GatewayLang.Schedule.Day}
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr class = "startTime" style="display:none">
+                <th class="">
+                    {GatewayLang.Schedule.Effective_time}:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="small datepicker" name="startTime" value="" data-validator="date()" data-required="false">
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="endTime"  style="display:none">
+                <th>
+                    {GatewayLang.Schedule.Failure_time}:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="small datepicker" name="endTime" value="" data-validator="date()" data-required="false">
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr class="mobile" style="display:none">
+                <th class="">
+                  	{GatewayLang.Schedule.Inform_the_phone}:
+                </th>
+                <td>
+                    <div>
+			        	<input type="text" name="mobile" value="" id="mobile">
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr class="email" style="display:none">
+                <th class="">
+                  	{GatewayLang.Schedule.Information_notification_email}:
+                </th>
+                <td>
+                    <div>
+			        	<input type="text" name="email" value="" id="email">
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<!--tr class="autoSend">
+                <th class="">
+                  	{GatewayLang.Schedule.autosend}:
+                </th>
+                <td>
+                    <div>
+			        	<input type="radio" name="autoSend" value="Y">{GatewayLang.Public.True}&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="autoSend" checked value="N">{GatewayLang.Public.False}
+                    </div>
+                </td>
+            </tr-->
+			<tr class="protocol">
+                <th class="">
+                  	{GatewayLang.SystemSetting.Business_protocol}:
+                </th>
+                <td>
+                    <div>
+			        	<select name="protocol">
+			        		<option>-------</option>
+			        	</select>
+                    </div>
+                </td>
+            </tr>
+			<tr class="operation">
+                <th class="">
+                  	{GatewayLang.SystemSetting.Coordination_trade}:
+                </th>
+                <td>
+                    <div>
+			        	<select name="operation">
+			        		<option>-------</option>
+			        	</select>
+                    </div>
+                </td>
+            </tr>
+			<tr class="partner">
+                <th class="">
+                  	{GatewayLang.SystemSetting.Trade_partner}:
+                </th>
+                <td>
+                    <div>
+			        	<select name="partner">
+			        		<option>-------</option>
+			        	</select>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

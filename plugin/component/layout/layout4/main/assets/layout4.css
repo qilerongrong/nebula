@@ -1,0 +1,224 @@
+html{height:100%;}
+body{height:100%;}
+.app{min-height:100%;position:relative;width:100%;background-color:#eee;}
+.app .wrapper{padding-bottom:0px;width:100%;}
+.btn{background-color:rgb(3,125,188);background-image:none;font-weight:normal;border:0 none;box-shadow:none;border-radius: 2px; padding:4px 15px;color:#fff;text-shadow:none;}
+.btn-primary{background-color:rgb(3,125,188);}
+.btn:hover{background-color:rgb(3,125,188);color:#fff;}
+.btn.disable{background-color:#ccc;color:#666;}
+.btn.disable:hover{background-color:#ccc;color:#666;}
+.v-grid .grid_table{border-radius: 0;border-bottom:1px solid #eee;}
+.v-grid .table_data{border-bottom:1px solid #ccc;border-right:1px solid #ccc;}
+.v-grid .table-bordered{border-radius: 0;}
+.v-grid thead{background:rgb(125,164,188) none;}
+.v-grid thead{border-radius: 0;}
+.v-grid table .v-thead th{border-color:rgb(125,164,188);color:#fff;font-weight:normal;border-bottom-width:0;padding:8px 5px;}
+.table-bordered thead:last-child tr:last-child th:first-child, .table-bordered tbody:last-child tr:last-child td:first-child{
+	border-radius: 0;
+}
+.table-bordered thead:last-child tr:last-child th:last-child, .table-bordered tbody:last-child tr:last-child td:last-child {
+	border-radius: 0;
+}
+.grid_table{background:rgb(125,164,188)}/*和表头颜色一致用于出现纵向滚动条时填色header*/
+#console{background: transparent; none;}
+#console .v-grid .table_data{border:0 none;}
+.v-form{background:transparent;}
+.v-form td input{padding:0;margin:0;}
+.docket .v-form table tr{background:transparent;}
+/*==============================header and nav==================================*/
+#header{height:60px;background:rgb(58,143,200) none;}
+#footer{height:0px;position:absolute;width:100%;bottom:0;left:0;border:0 none;padding:0;margin:0;background: transparent none}
+#nav{position:absolute;top:0;left:220px;right:220px;width:auto;height:60px;background-color: transparent;}
+.nav{margin-bottom:0;}
+.nav-tabs{border-bottom:0 none;}
+.navbar{background:transparent;height:100%;border:0 none;padding:0;margin:0;}
+.navbar .navbar-inner{height:100%;line-height:60px;padding:0;width:auto;box-shadow: none;}
+.navbar .navbar-inner .container{height:100%;}
+#nav .nav{height:100%;}
+#nav .nav li{height:58px;border-top:2px solid transparent;}
+#nav .nav li.active{border-color:#9cd70e;}
+#nav .nav .dropdown .nav_name{font-size:16px;}
+.navbar .nav .dropdown-menu li a:hover{color:#fff;background:transparent;}
+.navbar .nav li.dropdown .dropdown-toggle:hover{color:#fff;background:transparent;}
+.navbar .nav .dropdown-toggle{background:transparent;color:rgb(121,204,246);line-height:56px;}
+#nav .nav li.active .dropdown-toggle{background:transparent;border:0 none;color:#fff;}
+.navbar .nav li.dropdown.active > .dropdown-toggle:hover{background:transparent;color:#fff}
+.navbar .nav > li > a{padding:0 10px;}
+.navbar .nav .active > a, .navbar .nav .active > a:hover{box-shadow: none;}
+.navbar .nav li.dropdown.open{background-color:#75bedf}
+.navbar .dropdown-menu:before{
+	border:0 none;
+	display:none;
+}
+.navbar .dropdown-menu:after{
+	border:0 none;
+	display:none;
+}
+.dropdown-menu{border-radius: 0;background: #75bedf;color:#fff;box-shadow: none;border:0 none;top:100%;padding:0;margin:0;min-width:100%;}
+.dropdown-menu li a{color:#fff;}
+.open .dropdown-menu li{height:28px;line-height:28px;border:0 none;}
+.open .dropdown-menu li a{height:28px;line-height:28px;display:block;padding:0;padding:0 15px;width:auto;}
+.open .dropdown.open li a:hover{background-color: #8ac51b}
+.open .dropdown.open li a:hover .caret{border-color:#fff;}
+
+.navbar .dropdown-menu{border-radius: 0;background: #75bedf;color:#fff;box-shadow: none;border:0 none;top:100%;padding:0;min-width:120px;}
+.navbar .nav .dropdown-menu li a{color:#fff;}
+.navbar .nav li.dropdown.open > .dropdown-toggle{background:transparent;border:0 none;color:#fff;}
+#nav .navbar .nav .dropdown-menu li{height:28px;line-height:28px;border:0 none;}
+#nav .navbar .nav .dropdown-menu li a{height:28px;line-height:28px;display:block;padding:0;padding:0 15px;width:auto;}
+.navbar .nav li.dropdown.open li a:hover{background-color: #8ac51b}
+#header .top{height:60px;}
+#header .top .logo{text-align:center;height:60px;display:inline-block;}
+#header .top .logo img{vertical-align: middle;height:60px;}
+#header .top .links{height:100%;margin:0;}
+#header .top .links a{margin:0;float:none;}
+#header .top .links .btn-group{background: transparent none;box-shadow: none;border:0 none;float:left;height:100%;padding:0 15px;}
+#header .top .links .open{background:#75bedf}
+#header .top .links .btn-group .btn{height:60px;display:inline-block;line-height:60px;margin:0;padding:0;background: transparent;}
+#header .top .links .btn-group .caret{margin:27px 3px;border-top-color:#fff;}
+#header .top .links .btn-group > .dropdown-toggle{box-shadow: none}
+#header .top .links .btn-group .user_header{width:30px;height:30px;border-radius: 30px;;margin-right:4px;}
+.icon_logout{background:url(imgs/logout.png) center center no-repeat;width:17px;height:16px;display:inline-block;margin-top:22px;}
+#header .top .links .separator{float:left;margin:20px 0px;display:inline-block;height:20px;border-right:1px solid rgb(77,155,204);width:1px;}
+#header .top .links .dropdown-menu li{color:#000;width:100%;};
+#header .top .links .dropdown-menu li a{color:#fff;display:block;float:none;height:28px;line-height:28px;}
+#header .top .links .dropdown-menu li a:hover{color:#fff;background:#8ac51b;}
+
+/*=============================page===========================*/
+#content{margin:0;min-height:600px;}
+.myConsole{margin:20px 15px;}
+#main{margin:0;padding:0;background: #fff none;}
+#manage{background: #fff none;border:0 none;border-radius: 0;margin-bottom:0;position:relative;} 
+#manage .con_resize{position:absolute;top:15px;right:0px;background: transparent}
+#manage .stretch{background: #fff none;}
+#manage .stretch .menu {padding:0;background-color: #fff;border:0 none;width:220px;z-index:2;overflow: hidden;}
+#manage .content{padding:0;border:0 none;margin-left:0;min-height:600px;border-left:220px solid rgb(37,96,152);}
+#manage .menu .nav-list li a{padding:15px 25px;text-shadow:none;background-color:rgb(37,96,152);color:#fff;}
+#manage .menu .nav-list .nav-header{font-size:16px;font-weight:normal;border-bottom:1px solid rgb(37,96,152);background: rgb(29,70,126);padding:15px 25px;color:#fff;text-shadow:none;}
+#manage .menu .nav-list li.active a{background: rgb(82,177,221);color:#fff;}
+#manage .menu .nav li + .nav-header{margin-top:0;}
+#msgcontainer{position:fixed;top:80px;left:240px;width:260px;min-height:100px;z-index:1}
+#msgcontainer .info{display:block;line-height:24px;margin-top:6px;}
+
+/*===========================console=========================*/
+.v-consolePanel{box-shadow: none;border:0 none;border-radius: 0;background-color: #fff}
+.v-consolePanel .grid_table{background:#fff;}
+.v-consolePanel .v-grid table .v-thead th{color:#000;text-align:left;}
+.v-consolePanel .header {height:44px;line-height:44px;background:rgb(82,177,221);border-radius: 0;color:#fff;font-size:14px;}
+.v-consolePanel .con{padding:0 10px;}
+.v-consolePanel .more{color:#666;position:absolute;bottom:4px;right:10px;}
+/*====================================tabpanel===================================*/
+
+#global_tabspanel{background:rgb(37,96,152);padding:0 15px;border:0 none;padding-top:11px;margin-bottom:0;height:auto;overflow:hidden;}
+#global_tabspanel li{height:40px;line-height:40px;border:0 none;color:#fff;background: rgb(82,177,221);margin-right:5px;font-weight:normal;}
+#global_tabspanel li a{height:40px;line-height:40px;color:#fff;text-align: center;font-weight:normal;}
+#global_tabspanel .active{background: #fff;border:0 none;margin-bottom:0;margin-top:0;color:#000;}
+#global_tabspanel .active a{color:#000;font-weight:normal;}
+#global_tabspanel li .custom_tab_close{background:transparent none;bottom:30px;right:8px;}
+.btn_crumb_back{position:absolute;right:15px;top:-38px;}
+#global_tabscontent{}
+#global_tabscontent .tab-pane-page{margin-top:50px;padding:15px;background:rgb(232,236,239);}
+.tab-pane .list_toolbar{top:-38px;left:15px;right:auto;}
+.filters .form-search{background: #fff;box-shadow:none;border-radius: 0;}
+.filters .form-search .btn-hide{background:rgb(125,164,188);}
+.filters .form-search .btn-hide:hover{color:#fff;}
+
+
+/*=======================toolbar===========================*/
+.v-toolbar a{margin:0 10px 0 0;}
+/*=======================grid===========================*/
+.v-grid .th_seq,.v-grid .td_seq{width:40px;text-align:center!important;vertical-align:middle!important;}
+/*==========================docket================================*/
+.docket .legend{padding:0;margin:0;border:0 none;}
+.docket .legend .actions{position:absolute;top:-38px;left:15px;margin-top:0!important;}
+.docket .tab-docket{display:table;margin-right:5px;}
+.docket .tab-docket a{background:rgb(242,243,245);height:40px;display:table-cell;vertical-align:middle;padding:0 20px;border:0 none;color:rgb(125,125,125)}
+.docket .tab-docket a:hover{border:0 none;background:rgb(250,250,250)}
+.docket .tab-docket.active a{background:rgb(250,250,250);color:rgb(11,111,163);}
+.docket .tab-pane{background:rgb(250,250,250);padding:15px;}
+.docket .v-form table td{background:#fff;}
+.docket .v-form table .tr_block{border:0 none;}
+.docket .v-form .td_block{padding:0;border:0 none;background: transparent;}
+.docket .v-form table .block{background: rgb(119,183,231);border:0 none;margin:10px 0;color:#fff;padding:0 10px;}
+
+.docket .v-form table{border-collapse:collapse;border:0 none;}
+.docket .v-form table .subblock{background: rgb(231,239,250);color:#000;border-bottom:0 none;border-color:#eee;}
+.docket .v-form table tr{background:transparent;border:0 none;border-right:1px solid #eee;}
+.docket .v-form table td,.docket .v-form table th{border:0 none;border:1px solid #eee;}
+.docket .v-form table td{vertical-align:middle;}
+.docket .v-form table td .input.error{border:1px solid #9d261d}
+.docket .v-form table td .block_toggle{float:right;}
+.docket .v-form table td  .custom-combobox{position:relative}
+.docket .v-form table td  .custom-combobox .custom-combobox-input{width:100%}
+.docket .v-form table td  .custom-combobox .custom-combobox-toggle{position:absolute;top:0px;right:1px}
+.docket .v-form tr{height:auto;}
+
+
+/*=====================================task==========================================*/
+.task .taskForm{background: rgb(250,250,250)}
+.task .taskForm table td .input{width:100%;}
+.task .well{background:rgb(82,177,221);border-radius: 0;box-shadow: none;border:0 none;overflow:hidden;padding:15px;color:#fff;}
+.task .taskForm{background: rgb(250,250,250);color:#000;}
+.task .info{float:left;width:33%;color:#fff;}
+.task .info p{margin:0;line-height:28px;}
+.task .toolbar{position:absolute;top:-38px;left:15px;}
+.task .docket .actions{position:relative;top:0;left:0;}
+/*=============================================list=============================================*/
+.v-grid .table_data{margin-top:34px;}
+
+/*============================================dialog========================================*/
+.modal{border:0 none;border-radius: 0;}
+.modal .btn-close{background:rgb(125,164,188);}
+.modal-header{background:#469bd6 none;color:#fff;padding:4px 15px;}
+.modal-header .close{color:#fff;margin-top:4px;opacity: 1;font-weight:normal;}
+.modal-header .close:hover{color:#fff;opacity: 1}
+.modal-footer{border:0 none;background:transparent;}
+.icon-upload{background:url(imgs/upload.png) center center no-repeat;width:20px;height:20px;display:inline-block;margin-left:4px;vertical-align:middle;}
+.btn-browse{vertical-align:middle;}
+
+/*=======================case=================================*/
+.case-grid .grid_table,.case-grid table td,.case-grid table th,.case-grid table tr{border-color:#cecece;}
+
+/*=========================================custom======================*/
+.ticketCustom .top{
+	position:absolute;
+	top:-38px;
+	left:0px;
+}
+.ticketCustom .viewType .active{background-color:rgb(125,164,188)}
+
+/*============================================selector=======================================*/
+.selector .btn_choose{margin-left:10px;padding:4px 6px;}
+.selector .btn_choose_remove{padding:4px 6px;}
+
+/*================================================workflow===================================*/
+.workflow_box{position:relative;padding-left:90px;}
+.workflow_box .toolbar{top:-50px;left:0px; background:transparent;box-shadow: none;opacity: 1;padding:0;margin:0;}
+.workflow_box .flow_attrs{position:relative;top:0;left:0;box-shadow:none;height:auto;z-index:0;display:block;}
+.workflow_box .nodes_box{width:90px;}
+.workflow_box .attrs_box{box-shadow: none;opacity: 0.85;overflow:hidden;height:500px;width:360px;right:0px;border-left:#ccc;}
+.workflow_box .attrs_box .attrs{height:469px;}
+.workflow_box .attrs_box .docket{overflow: auto;}
+.nodes_box .node{background:rgb(125,164,188)}
+.workflow_node.selected{background:rgb(125,164,188)}
+.workflow_box .attrs_box .v-form .input{width:100%;}
+.workflow_box .attrs_box .v-form table .block{margin:0;line-height:28px;}
+.workflow_box .attrs_box .v-form table td{padding:0 4px;}
+.workflow_box .attrs_box .v-form table .td_block{padding:0;border-bottom:1px solid #fff;}
+.workflow_box .attrs_box .v-form table td .btn{padding:2px 4px;}
+.workflow_box .flow_box{border:0 none;}
+.workflow_box .workflow_node{max-width:100px;border-radius: 4px;}
+.workflow_box .workflow_node .ep{box-shadow: none}
+.workflow_box .attrs_box .v-form .block .block_toolbar{float:none;}
+.workflow_box .attrs_box .block_toolbar .btn{background:rgb(3,125,188);padding:2px 4px;vertical-align:middle;}
+.workflow_box .attrs_box .v-form .selector input{width:144px;}
+.workflow_box .attrs_box .box_tit{text-align:center;line-height:30px;height:30px;background:rgb(242,243,245);font-weight:bold;border-bottom:1px solid #efefef;}
+.workflow_box .attrs_box .box_tit .toggle{float:left;width:30px;height:30px;display:inline-block;}
+.workflow_box .attrs_box .box_tit .toggle i{display:inline-block;height:16px;width:16px;}
+.workflow_box .attrs_box .v-grid .table_header{display:none;height:0;}
+.workflow_box .attrs_box .v-grid .table_data{margin-top:0;border:0 none;}
+.workflow_box .attrs_box .v-grid{border:0 none;}
+.workflow_box .attrs_box .v-grid table{border:0 none;}
+.workflow_box .attrs_box .v-grid .grid_table{border:0 none;}
+.workflow_box .attrs_box .v-grid table tr{border:0 none;}
+.workflow_box .attrs_box .v-grid table td{border:0 none;}

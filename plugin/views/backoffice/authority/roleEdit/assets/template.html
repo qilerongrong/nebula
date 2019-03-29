@@ -1,0 +1,64 @@
+<div class="role">
+	<form  class="form-horizontal v-form">
+	  <fieldset class="view">
+	    <div class="legend">
+	    	角色
+		    <span class="btn-group group_view" style="float:right"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		    <span class="btn-group group_edit" style="float:right;display:none;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+        </div>
+	    <div class="control-group" style="margin-top:10px">
+	      <label class="control-label" for="input01"><span style="color:red">*</span>角色编码：</label>
+	      <div class="controls" data-key="roleCode">
+	      	<input type="text" class="input-xlarge  edit_input" disabled id="input01" data-validator="text1(0,100)" data-required="true">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+		<div class="control-group">
+	      <label class="control-label" for="input01"><span style="color:red">*</span>角色名称：</label>
+	      <div class="controls" data-key="roleName">
+	        <input type="text" class="input-xlarge edit_input" id="input01" data-validator="text(0,100)" data-required="true">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+		<div class="control-group">
+	      <label class="control-label" for="input01">角色备注：</label>
+	      <div class="controls" data-key="remark">
+	        <input type="text" class="input-xlarge edit_input" id="input01" data-validator="" data-required="false">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    <div class="control-group span6">
+					<label class="control-label" for="input01"><span style="color:red">*</span>所在区域：</label>
+					<div class="controls" data-key="domain" >
+						<input type="text" class="input-xlarge edit_input" id="input01"
+							data-validator="text(0,64)" data-required="true">
+						<p class="view_text"></p>
+						<p class="error_msg"></p>
+					</div>
+				</div>
+	    <!-- <div class="control-group">
+	      <label class="control-label" for="input01">角色类型：</label>
+	      <div class="controls" data-key="businessRole" data-type="select">
+	        <select name="" style="width: 270px"
+				class="input-xlarge edit_input" id="input01">
+				<option value="ENTERPRISE">丝路</option>
+				<option value="CUSTOMER">经销商</option>
+			</select>
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div> -->
+	  </fieldset>
+	</form>
+	
+	<form class="form-horizontal">
+	  <fieldset id="role">
+	    <div class="legend">
+	    	功能权限
+			<span class="btn-group view" style="float:right;display: none;"><a class="btn btn-success edit_authority btn-mini" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		</div>
+	    <div class="control-group">
+	    	<div class='authority_list'></div>
+	    </div>
+	  </fieldset>
+	</form>
+</div>

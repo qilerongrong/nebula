@@ -1,0 +1,177 @@
+<div class="role">
+	<form  class="form-horizontal v-form" onsubmit="return false;">
+		<div class="invoiceBase">
+	  <fieldset class="base">
+	    <div class="legend">
+	    	发票基本信息
+		    <span class="btn-group group_edit" style="float:right;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+        </div>
+        <div class="row-fluid">
+			<div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>录入类型：</label>
+		      	<div class="controls" data-key="invtaxsign" data-type="select">
+			        <select name="" class="input-xlarge edit_input" id="input01">
+			        	<option value="0" selected>自开</option>
+			        	<option value="1">代开</option>
+			        </select>
+		      	</div>
+		    </div>
+		    <div class="control-group span6" style="display:none">
+		     	 <label class="control-label" for="input01"><span style="color:red">*</span>代开纳税人识别号：</label>
+		      	<div class="controls" data-key="invtaxno">
+		        	<input type="text" class="input-xlarge edit_input" id="input01" data-validator="sellerCode" data-required="true">
+					<p class="error_msg" ></p>
+		      	</div>
+		    </div>
+	    </div>
+	    <div class="row-fluid">
+		    <div class="control-group span6">
+		    	<label class="control-label" for="input01"><span style="color:red">*</span>发票类型：</label>
+		    	<div class="controls" data-key="invtype" data-type="select">
+			        <select name="" class="input-xlarge edit_input" id="input01">
+			        	
+			        </select>
+		      	</div>
+		    </div>
+		    <div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>开票日期：</label>
+		     	<div class="controls" data-key="invdate">
+			        <input type="text" class="input-xlarge edit_input datepicker" id="input001" data-validator="date" data-required="true">
+					<p class="error_msg" ></p>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="row-fluid">
+			<div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>购方纳税人：</label>
+		      	<div class="controls" data-key="buyerTax">
+		        	<!--input type="text" class="input-xlarge edit_input" id="input01" data-required="true" readonly-->
+					<span class="edit_input" data-required="true"></span>
+					<p class="error_msg" ></p>
+		      	</div>
+		    </div>
+		    <div class="control-group span6">
+		     	 <label class="control-label" for="input01"><span style="color:red">*</span>销方纳税人：</label>
+		      	<div class="controls" data-key="sellerTax">
+		        	<!--input type="text" class="input-xlarge edit_input" id="input01" data-validator="sellerCode" data-required="true"-->
+					<span class="edit_input" data-required="true"></span>
+					<p class="error_msg" ></p>
+		      	</div>
+		    </div>
+	    </div>
+	    <div class="row-fluid">
+		    <div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>发票代码：</label>
+		      	<div class="controls" data-key="invkind">
+		        	<input type="text" class="input-xlarge edit_input" id="input01" data-validator="exactNumberLength(10)" data-required="true" maxlength="10">
+					<p class="error_msg" ></p>
+		      	</div>
+		    </div>
+		    <div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>发票号码：</label>
+		      	<div class="controls" data-key="invnum">
+		       		<input type="text" class="input-xlarge edit_input" id="input01" data-validator="exactNumberLength(8)" data-required="true" maxlength="8">
+					<p class="error_msg" ></p>
+		      	</div>
+		    </div>
+	    </div>
+	    <div class="row-fluid">
+			<div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>税率：</label>
+		      	<div class="controls" data-key="invrate" data-type="select">
+		       		<select name="" class="input-xlarge edit_input">
+			        	
+			        </select>
+		      	</div>
+		    </div>
+		    <div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>备注类型：</label>
+		      	<div class="controls" data-key="invCommentType" data-type="select">
+		       		<select name="invCommentType" class="input-xlarge edit_input">
+			        	<option value="0">红票</option>
+			        	<option value="1" selected>蓝票</option>
+			        </select>
+		      	</div>
+		    </div>
+	    </div>
+	    <div class="row-fluid">
+		    <div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>未税金额：</label>
+		      	<div class="controls" data-key="invcost">
+			        <input type="text" class="input-xlarge edit_input" id="input01" data-validator="price2" data-required="true" maxlength="14">
+					<p class="error_msg" ></p>
+		      	</div>
+		    </div>  	
+			<div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>税额：</label>
+		      	<div class="controls" data-key="invvat">
+		        	<input type="text" class="input-xlarge edit_input" id="input01" data-validator="price2" data-required="true" maxlength="14">
+		        	<!-- a class="view" href="javascript:void(0);" title="自动计算"><i class="icon-ok-sign autoCompute"></i></a-->
+					<p class="error_msg" ></p>
+		      	</div>
+		    </div>
+		</div>    
+	    <div class="row-fluid">
+		    <div class="control-group span6">
+		      	<label class="control-label" for="input01"><span style="color:red">*</span>发票状态：</label>
+		      	<div class="controls" data-key="invstatus"  data-type="select">
+			        <select name="invstatus" class="input-xlarge edit_input">
+			        </select>
+		      	</div>
+		    </div>  	
+		</div>
+	  </fieldset>
+	  <fieldset class="password">
+	    <div class="legend">密文信息</div>
+	    <div class="row-fluid">
+		    <div class="control-group span6">
+		    	<label class="control-label" for="input01">密文长度：</label>
+		    	<div class="controls" data-key="invpwdLen" data-type="radio">
+			        <span><input type="radio" class="input edit_input" name="invpwd" value="1" data-validator="" data-required="" checked>84位</span>
+		       		<span><input type="radio" class="input edit_input" name="invpwd" value="2" data-validator="" data-required="">108位</span>
+			    </div>
+		    </div>
+		</div>
+        <div class="row-fluid">
+		    <div class="control-group span6">
+		      	<label class="control-label" for="input01">
+		      		<span style="color:red"></span>密文信息：</p>
+		      	</label>
+		      	<div class="invpwdArea">
+			      	<div class="controls" data-key="invpwd1">
+			        	<input type="text" class="input-xlarge edit_input" id="input01" data-validator="ciphertext(21)" data-required="false" maxlength="21">
+						<p class="error_msg" ></p>
+			      	</div>
+			      	<div class="controls" data-key="invpwd2">
+			        	<input type="text" class="input-xlarge edit_input" id="input01" data-validator="ciphertext(21)" data-required="false" maxlength="21">
+						<p class="error_msg" ></p>
+			      	</div>
+			      	<div class="controls" data-key="invpwd3">
+			        	<input type="text" class="input-xlarge edit_input" id="input01" data-validator="ciphertext(21)" data-required="false" maxlength="21">
+						<p class="error_msg" ></p>
+			      	</div>
+			      	<div class="controls" data-key="invpwd4">
+			        	<input type="text" class="input-xlarge edit_input" id="input01" data-validator="ciphertext(21)" data-required="false" maxlength="21">
+						<p class="error_msg" ></p>
+			      	</div>
+		      	</div>
+		    </div>
+	    </div>
+      </fieldset>
+      </div>
+      <div class="invoiceRemark">
+	  <fieldset class="remark">
+	  		<div class="legend">备注信息<a href="javascript:void(0);" class="help" style="vertical-align:middle;margin:2px 2px;"><i class="icon-question-sign"></i></a></div>
+			  	<div class="row-fluid invoiceRemarkRuleContainer">
+					
+				</div>
+				<div class="row-fluid redInvoiceRemarkRuleContainer">
+					
+				</div>
+				<div class="row-fluid invoiceMsgInfo">
+					
+				</div>
+	  </fieldset>
+	  </div>
+	</form>
+</div>

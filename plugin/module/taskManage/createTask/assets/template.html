@@ -1,0 +1,423 @@
+<div class="form-horizontal v-form">
+    <div class="hidden">
+        <input type="hidden" name="id" value="">
+    </div>
+    <table class="">
+        <tbody>
+            <tr>
+                <th class="">
+                    <span class="required">*</span>任务名称:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="triggerName" value="" data-validator="text(0,10)" data-required="true">
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="">
+                    <span class="required">*</span>对象名/类名:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="jobName" value="" data-validator="text(0,100)" data-required="true">
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr>
+                <th class="">
+                    配置参数:
+                </th>
+                <td>
+                    <div>
+                        <textarea class="input-large" name="config" ></textarea>
+                        	格式:param=1 每个参数为一行
+						<p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="">
+                    开始时间:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="small datepicker" name="startTime" value="" >
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="">
+                    结束时间;
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="small datepicker" name="endTime" value="" >
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th class="">
+                    触发模式:
+                </th>
+                <td>
+                    <div>
+                        <div class="form_checkbox">
+                            <input type="radio" name="triggerType" checked value="-1">手动触发&nbsp;&nbsp;<input type="radio" name="triggerType" value="2">CRON触发&nbsp;&nbsp;<input type="radio" name="triggerType" value="1">固定时刻触发&nbsp;&nbsp;<input type="radio" name="triggerType" value="0">日历周期触发&nbsp;&nbsp;
+                        </div>
+                    </div>
+                </td>
+            </tr>
+			<tr class="cron" style="display:none">
+                <th class="">
+          CRON表达式:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="cron" value="" >格式：秒 分钟 小时 月中的天 月 周中的天 年
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+             <tr class="fixed" style="display:none">
+                <th class="">
+                    间隔时间(秒):
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="repeatInterval" value="" >
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="fixed" style="display:none">
+                <th class="">
+                   执行次数:
+                </th>
+                <td>
+                    <div>
+                        <input type="text" class="input-large" name="repeatCount" value="" >如果为0表示不限次数，直到结束时间为止
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="week" style="display:none">
+                <th class="">
+                    触发时间:
+                </th>
+                <td>
+                    <div>
+                        <select name="hour" style="width:45px;" id="hour">
+						    <option value="0">0</option>
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						    <option value="13">13</option>
+						    <option value="14">14</option>
+						    <option value="15">15</option>
+						    <option value="16">16</option>
+						    <option value="17">17</option>
+						    <option value="18">18</option>
+						    <option value="19">19</option>
+						    <option value="20">20</option>
+						    <option value="21">21</option>
+						    <option value="22">22</option>
+						    <option value="23">23</option>
+						</select>时
+						<select name="minute" style="width:45px;" id="minute">
+							    <option value="0">0</option>
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							    <option value="6">6</option>
+							    <option value="7">7</option>
+							    <option value="8">8</option>
+							    <option value="9">9</option>
+							    <option value="10">10</option>
+							    <option value="11">11</option>
+							    <option value="12">12</option>
+							    <option value="13">13</option>
+							    <option value="14">14</option>
+							    <option value="15">15</option>
+							    <option value="16">16</option>
+							    <option value="17">17</option>
+							    <option value="18">18</option>
+							    <option value="19">19</option>
+							    <option value="20">20</option>
+							    <option value="21">21</option>
+							    <option value="22">22</option>
+							    <option value="23">23</option>
+							    <option value="24">24</option>
+							    <option value="25">25</option>
+							    <option value="26">26</option>
+							    <option value="27">27</option>
+							    <option value="28">28</option>
+							    <option value="29">29</option>
+							    <option value="30">30</option>
+							    <option value="31">31</option>
+							    <option value="32">32</option>
+							    <option value="33">33</option>
+							    <option value="34">34</option>
+							    <option value="35">35</option>
+							    <option value="36">36</option>
+							    <option value="37">37</option>
+							    <option value="38">38</option>
+							    <option value="39">39</option>
+							    <option value="40">40</option>
+							    <option value="41">41</option>
+							    <option value="42">42</option>
+							    <option value="43">43</option>
+							    <option value="44">44</option>
+							    <option value="45">45</option>
+							    <option value="46">46</option>
+							    <option value="47">47</option>
+							    <option value="48">48</option>
+							    <option value="49">49</option>
+							    <option value="50">50</option>
+							    <option value="51">51</option>
+							    <option value="52">52</option>
+							    <option value="53">53</option>
+							    <option value="54">54</option>
+							    <option value="55">55</option>
+							    <option value="56">56</option>
+							    <option value="57">57</option>
+							    <option value="58">58</option>
+							    <option value="59">59</option>
+							</select>
+						分
+						<select name="second" style="width:45px;" id="second">
+							    <option value="0">0</option>
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							    <option value="6">6</option>
+							    <option value="7">7</option>
+							    <option value="8">8</option>
+							    <option value="9">9</option>
+							    <option value="10">10</option>
+							    <option value="11">11</option>
+							    <option value="12">12</option>
+							    <option value="13">13</option>
+							    <option value="14">14</option>
+							    <option value="15">15</option>
+							    <option value="16">16</option>
+							    <option value="17">17</option>
+							    <option value="18">18</option>
+							    <option value="19">19</option>
+							    <option value="20">20</option>
+							    <option value="21">21</option>
+							    <option value="22">22</option>
+							    <option value="23">23</option>
+							    <option value="24">24</option>
+							    <option value="25">25</option>
+							    <option value="26">26</option>
+							    <option value="27">27</option>
+							    <option value="28">28</option>
+							    <option value="29">29</option>
+							    <option value="30">30</option>
+							    <option value="31">31</option>
+							    <option value="32">32</option>
+							    <option value="33">33</option>
+							    <option value="34">34</option>
+							    <option value="35">35</option>
+							    <option value="36">36</option>
+							    <option value="37">37</option>
+							    <option value="38">38</option>
+							    <option value="39">39</option>
+							    <option value="40">40</option>
+							    <option value="41">41</option>
+							    <option value="42">42</option>
+							    <option value="43">43</option>
+							    <option value="44">44</option>
+							    <option value="45">45</option>
+							    <option value="46">46</option>
+							    <option value="47">47</option>
+							    <option value="48">48</option>
+							    <option value="49">49</option>
+							    <option value="50">50</option>
+							    <option value="51">51</option>
+							    <option value="52">52</option>
+							    <option value="53">53</option>
+							    <option value="54">54</option>
+							    <option value="55">55</option>
+							    <option value="56">56</option>
+							    <option value="57">57</option>
+							    <option value="58">58</option>
+							    <option value="59">59</option>
+							</select>秒
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+             <tr class="week" style="display:none">
+                <th class="">
+                  循环模式:
+                </th>
+                <td>
+                    <div>
+			        	<input type="radio" name="clType" id="clType1" checked="checked" value="1">每日
+						<input type="radio" name="clType" id="clType2" value="2">每周
+						<input type="radio" name="clType" id="clType3" value="3">每月
+						<input type="radio" name="clType" id="clType4" value="4">每年
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			  <tr class="week1" style="display:none">
+                <th class="">
+                  循环值:
+                </th>
+                <td>
+                    <div>
+			        	<input type="checkbox" name="week" value="1" id="week-1">
+						星期日
+						<input type="checkbox" name="week" value="2" id="week-2">
+						星期一
+						<input type="checkbox" name="week" value="3" id="week-3">
+						星期二
+						<input type="checkbox" name="week" value="4" id="week-4">
+						星期三
+						<input type="checkbox" name="week" value="5" id="week-5">
+						星期四
+						<input type="checkbox" name="week" value="6" id="week-6">
+						星期五
+						<input type="checkbox" name="week" value="7" id="week-7">
+						星期六
+						<input type="hidden" id="__multiselect_week" name="__multiselect_week" value=""> 
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr class="week2" style="display:none">
+                <th class="">
+                  循环值:
+                </th>
+                <td>
+                    <div>
+			        	每月第<select name="monthday" style="width:45px;" id="monthday">
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						    <option value="13">13</option>
+						    <option value="14">14</option>
+						    <option value="15">15</option>
+						    <option value="16">16</option>
+						    <option value="17">17</option>
+						    <option value="18">18</option>
+						    <option value="19">19</option>
+						    <option value="20">20</option>
+						    <option value="21">21</option>
+						    <option value="22">22</option>
+						    <option value="23">23</option>
+						    <option value="24">24</option>
+						    <option value="25">25</option>
+						    <option value="26">26</option>
+						    <option value="27">27</option>
+						    <option value="28">28</option>
+						    <option value="29">29</option>
+						    <option value="30">30</option>
+						    <option value="31">31</option>
+						</select>天
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+			<tr class="week3" style="display:none">
+                <th class="">
+                  循环值:
+                </th>
+                <td>
+                    <div>每年
+			        	<select name="month" style="width:45px;" id="month">
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						</select>月
+						<select name="day" style="width:45px;" id="day">
+						    <option value="1">1</option>
+						    <option value="2">2</option>
+						    <option value="3">3</option>
+						    <option value="4">4</option>
+						    <option value="5">5</option>
+						    <option value="6">6</option>
+						    <option value="7">7</option>
+						    <option value="8">8</option>
+						    <option value="9">9</option>
+						    <option value="10">10</option>
+						    <option value="11">11</option>
+						    <option value="12">12</option>
+						    <option value="13">13</option>
+						    <option value="14">14</option>
+						    <option value="15">15</option>
+						    <option value="16">16</option>
+						    <option value="17">17</option>
+						    <option value="18">18</option>
+						    <option value="19">19</option>
+						    <option value="20">20</option>
+						    <option value="21">21</option>
+						    <option value="22">22</option>
+						    <option value="23">23</option>
+						    <option value="24">24</option>
+						    <option value="25">25</option>
+						    <option value="26">26</option>
+						    <option value="27">27</option>
+						    <option value="28">28</option>
+						    <option value="29">29</option>
+						    <option value="30">30</option>
+						    <option value="31">31</option>
+						</select>日
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

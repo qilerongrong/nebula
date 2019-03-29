@@ -1,0 +1,25 @@
+<div class="row">
+<div class="span5">
+	<select name="pointcode" id="pointcode">
+		<option value="1">公司代码</option>
+		<option value="2">商品编码</option>
+		<option value="3">品牌编码</option>
+		<option value="4">品类编码</option>
+	</select>
+</div>
+</div>
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">匹配</a></li>
+  <li><a href="#profile">应用</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="home">
+  	<div class="row-fluid">
+  <div class="span4">编码: <input type="text" class="input-xlarge edit_input" style="width:110px;" id="code"></div>
+  <div class="span2"><a href="javascript:void(0)" id="search" class="btn btn-inverse">查询匹配</a></div>
+</div>
+	
+<div id="search_result"></div></div>
+<div class="tab-pane" id="profile"><div id="app_result">单据列表</div></div>
+</div>

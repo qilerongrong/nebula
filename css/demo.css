@@ -1,0 +1,27 @@
+.navbar{height:34px;background:#483d8b none;line-height:34px;border:0 none;color:#fff;}
+.navbar .navbar-inner{height:34px;background:none;line-height:34px;}
+.navbar .nav li a{border-left:0 none;border-right:0 none;}
+.navbar .nav .dropdown-menu li a{border:0 none;color:#000;}
+.navbar .nav .dropdown-menu li a:hover{color:#fff;background:#666}
+.navbar .nav li.dropdown .dropdown-toggle:hover{background:#999;color:#fff;}
+.navbar .nav li a i{vertical-align:middle;}
+.navbar .nav li.dropdown.open{background:#fff;}
+.navbar .nav li.dropdown.open > .dropdown-toggle{color:#000;background:#fff}
+.navbar .nav li.dropdown.active > .dropdown-toggle:hover{background:#fff;color:#000}
+.navbar .nav .active > .dropdown-toggle,.navbar .nav li.active > .dropdown-toggle:hover{background:#fff;color:#000;}
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,.navbar .nav li.dropdown.open.active > .dropdown-toggle:hover{background:#fff;color:#000;}
+.navbar .nav > li > a {padding:7px 10px;color:#fff;}
+.navbar .nav .nav_name{vertical-align:middle;margin:0 4px;line-height:20px;}
+.dropdown .caret{margin:0;vertical-align:middle;}
+
+.menu .nav-list .active a{background:#666 none;color:#fff}
+.menu .nav-list .active a:hover{background:#666 none;color:#fff}
+.menu .nav-list a{color:#000}
+.menu .nav-list a:hover{background:#ccc} 
+#header .top{height:36px;}
+#header .top .links{margin:6px;}
+#header .top .links a{color:#eee;}
+#header {
+background: url(../imgs/header-bg.png) -100px -162px repeat-x;
+}
+.nav-header{cursor:pointer;}

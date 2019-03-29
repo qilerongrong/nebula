@@ -1,0 +1,156 @@
+<div class="post">
+	<form  class="form-horizontal v-form">
+	  <fieldset class="view">
+	    <div class="legend">
+	    	岗位
+		    <span class="btn-group group_view" style="float:right"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		    <span class="btn-group group_edit" style="float:right;display:none;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+        </div>
+	    <div class="control-group" style="margin-top: 10px">
+	      <label class="control-label" for="input01"><span style="color:red">*</span>岗位编码：</label>
+	      <div class="controls" data-key="code">
+	      	<input type="text" class="input-xlarge  edit_input" disabled id="input01" data-validator="text1(0,100)" data-required="true">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+		<div class="control-group">
+	      <label class="control-label" for="input01"><span style="color:red">*</span>岗位名称：</label>
+	      <div class="controls" data-key="name">
+	        <input type="text" class="input-xlarge edit_input" id="input01" data-validator="text(0,100)" data-required="true">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+		<div class="control-group">
+	      <label class="control-label" for="input01">岗位备注：</label>
+	      <div class="controls" data-key="description">
+	        <input type="text" class="input-xlarge edit_input" id="input01" data-validator="" data-required="false">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    
+	    <!--  <div class="control-group">
+	      <label class="control-label" for="input01">岗位类型：</label>
+	      <div class="controls" data-key="businessRole" data-type="select">
+	        <select name="" style="width: 270px"
+				class="input-xlarge edit_input" id="input01">
+				<option value="ENTERPRISE">思路</option>
+				<option value="CUSTOMER">经销商</option>
+			</select>
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    <div class="control-group">
+	      <label class="control-label" for="input01">管辖区域：</label>
+	      <div class="controls" data-key="ext1" > 
+	      <span>全部<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="*" id="input01">
+	      	CatheMeng<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="CatheMeng" id="input01">
+	      	BryanXue<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="BryanXue" id="input01">
+	      	ZhangJun<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="ZhangJun" id="input01">
+	      	JinYue<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="JinYue" id="input01">
+	      	TonyGe<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="TonyGe" id="input01">
+	      	GaoYiqing<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="GaoYiqing" id="input01">
+	      	RangZhao<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="RangZhao" id="input01">
+	      	LisaGuo<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="LisaGuo" id="input01">
+	      	JustinShi<input class="input-xlarge edit_input" type="checkbox" name="ext1" value="JustinShi" id="input01"></span>  
+	      	
+	        <input type="text" id="ext1" class="input-xlarge edit_input" id="input01" data-validator="" data-required="false" readonly>
+	       <input type="button" class="btn btn-mini btn-inverse selectArea" id="input01" value="选择" />
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    <div class="control-group">
+	      <label class="control-label" for="input01">管辖大区：</label>
+	      <div class="controls" data-key="ext2" data-type="select">
+	        <select name="" style="width: 270px"
+				class="input-xlarge edit_input" id="input01">
+				<option value="">请选择</option>
+				<option value="EAST">EAST</option>
+				<option value="SOUTH">SOUTH</option>
+				<option value="WEST">WEST</option>
+				<option value="NORTH">NORTH</option>
+				<option value="SOUTHEAST">SOUTHEAST</option>
+			</select>
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>  -->
+<!-- 	    <div class="control-group span6">
+					<label class="control-label" for="input01"><span style="color:red">*</span>所在区域：</label>
+					<div class="controls" data-key="domain" >
+						<input type="text" class="input-xlarge edit_input" id="input01"
+							data-validator="text(0,64)" data-required="true">
+						<p class="view_text"></p>
+						<p class="error_msg"></p>
+					</div>
+		</div> -->
+	   
+
+	     <div class="control-group" style="display: none">
+	      <label class="control-label" for="input01">组织机构编码：</label>
+	      <div class="controls" data-key="orgCode">
+	        <input type="hidden" class="input-xlarge edit_input org_code" id="input01" data-validator="" data-required="">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div> 
+  	    <div class="control-group" style="display: none">
+	      <label class="control-label" for="input01">组织机构类型：</label>
+	      <div class="controls" data-key="orgType">
+	        <input type="hidden" class="input-xlarge edit_input org_type" id="input01" data-validator="" data-required="">
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>  
+	    <div class="control-group" style="display: none">
+	      <label class="control-label" for="input01"><span style="color:red">*</span>组织机构：</label>
+	      <div class="controls" data-key="orgName">
+	        <input type="hidden" class="input-xlarge edit_input org_name" id="input01" data-validator="" data-required="true" readOnly>
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    
+	    <div class="control-group">
+	      <label class="control-label" for="input01"><span style="color:red">*</span>组织机构：</label>
+	      <div class="controls" data-key="orgName">
+	        <input type="text" class="input-xlarge edit_input org_name" id="input01" data-validator="" data-required="true" readOnly>
+	        <input type="button" class="btn btn-mini btn-inverse selectOrg" id="input01" value="选择" />
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+	    
+	    <div class="control-group">
+	      <label class="control-label" for="input01">负责分公司：</label>
+	      <div class="controls" data-key="ext1">
+	        <input type="text" class="input-xlarge edit_input ext1" id="input01"  >
+			<p class="view_text"></p><p class="error_msg" ></p>
+	      </div>
+	    </div>
+
+	    
+	    
+	    
+	  </fieldset>
+	</form>
+	
+	<form class="form-horizontal">
+	  <fieldset id="role">
+	    <div class="legend">
+	    	角色
+			<span class="btn-group view" style="float:right"><a class="btn btn-mini btn-success view_roles" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		</div>
+	    <div class="control-group">
+	    	<div class='rolelist'></div>
+	    </div>
+	  </fieldset>
+	</form>
+	<form class="form-horizontal">
+		<fieldset class="manager" style="display: none">
+			<div class="legend">
+				管理范围<span><i style="margin:3px 5px;" class="icon-warning-sign saveTip"></i></span> 
+				<span class="btn-group group_set" style="float: right;margin-left:10px"><a class="btn btn-success btn-mini matchsetSave" href="javascript:void(0);"><i class="icon-ok icon-white"></i> 保存</a></span>
+				<span class="btn-group group_set" style="float: right;"><a class="btn btn-success btn-mini matchset" href="javascript:void(0);"><i class="icon-asterisk icon-white"></i> 设置控制点</a></span>
+				<span class="btn-group group_set" style="float: right;"><a class="btn btn-success btn-mini express" href="javascript:void(0);"><i class="icon-asterisk icon-white"></i> 设置表达式</a></span>
+			</div>
+			<div class="control-group controlPoint">
+				
+			</div>
+		</fieldset>
+	</form>
+</div>

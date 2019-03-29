@@ -1,0 +1,81 @@
+<div class="conditionEdit">
+	<form1 class="form-horizontal v-form">
+		<fieldset class="view">
+			<div class="row-fluid">
+				<div class="control-group span6">
+					<label class="control-label"><span style="color: red">*</span>菜单名称：</label>
+					<div class="controls" data-key="menuName">
+						<input type="text" class="edit_input"
+							 data-validator="text(0,40)" data-required="true" readOnly>
+						<p class="error_msg"></p>
+					</div>
+				</div>
+				<div class="control-group span6">
+					<label class="control-label"><span style="color: red">*</span>条件名称：</label>
+					<div class="controls" data-key="conditionName">
+						<input type="text" class="edit_input"
+							 data-validator="text(0,40)" data-required="true">
+						<p class="error_msg"></p>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="control-group span6">
+					<label class="control-label"><span style="color: red">*</span>条件类型：</label>
+					<div class="controls" data-key="conditionType" data-type="select">
+						<select name="conditionType" style="" class="edit_input" disabled>
+							<option value="TEXT">文本</option>
+							<option value="DATE">时间</option>
+							<option value="NUMBER">数字</option>
+							<option value="SELECT">单选</option>
+							<option value="CHECKBOX">多选</option>
+							<option value="PLUGIN">插件</option>
+							<option value="DATE_YEAR_MON">年月</option>
+							<option value="PERCENT">百分比</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group span6">
+					<label class="control-label"><span style="color: red">*</span>条件操作符：</label>
+					<div class="controls" data-key="conditionOperator" data-type="select">
+						<select name="conditionOperator" style="" class="edit_input">
+							<option value="1">小于</option>
+							<option value="2">小于等于</option>
+							<option value="3">等于</option>
+							<option value="4">大于</option>
+							<option value="5">大于等于</option>
+							<option value="6">不等于</option>
+							<option value="7">like</option>
+							<option value="8">in</option>
+							<option value="9">between</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="control-group span6">
+					<label class="control-label">条件默认值：</label>
+					<div class="controls" data-key="conditionValue">
+						<input type="text" class="edit_input input-small" data-validator="text(0,200)" data-required="false">
+						<span style="margin:10px;">-</span>
+						<input type="text" class="edit_input input-small" data-validator="text(0,200)" data-required="false">
+						<p class="error_msg"></p>
+					</div>
+				</div>
+				<!-- div class="control-group span6">
+					<label class="control-label"><span style="color: red">*</span>插件名称：</label>
+					<div class="controls" data-key="ns" data-type="select">
+						<select name="ns" style="" class="edit_input">
+							<option value="v.b2b.component.sellerSelector">销方</option>
+							<option value="v.b2b.component.buyerSelector">购方</option>
+							<option value="v.b2b.component.sellerTaxSelector">销方税号</option>
+							<option value="v.b2b.component.buyerTaxSelector">购方税号</option>
+							<option value="v.b2b.component.storeSelector">门店</option>
+							<option value="v.b2b.component.contractSelector">合同</option>
+						</select>
+					</div>
+				</div-->
+			</div>
+		</fieldset>
+	</form1>
+</div>

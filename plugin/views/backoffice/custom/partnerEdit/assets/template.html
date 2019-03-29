@@ -1,0 +1,303 @@
+<div>
+<div class="role step" name="step1" >
+	<form  class="v-form form-horizontal">
+	  	<fieldset class="edit">
+		    <div class="legend">
+		    	基本信息
+		<span class="btn-group party_group_view" style="float:right;display:none;"><a class="btn btn-mini btn-success edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+	    <span class="btn-group party_group_edit" style="float:right;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+	        </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>供应商编码：</label>
+			      <div class="controls" partner-data-key="partnerCode">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="true"  id="input01" readOnly>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>供应商名称：</label>
+			      <div class="controls" partner-data-key="partnerName">
+			      	<input type="text" class="input-xlarge  edit_input" data-validator="text(0,30)" data-required="true"   id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>纳税人识别号：</label>
+			      <div class="controls" partner-data-key="taxno">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="sellerCode" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>纳税人名称：</label>
+			      <div class="controls" partner-data-key="taxname">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">开户行：</label>
+			      <div class="controls" partner-data-key="bank">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="false"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">银行帐号：</label>
+			      <div class="controls" partner-data-key="account">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="false"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">结算单结算：</label>
+			      <div class="controls" partner-data-key="isStatement" data-type="select">
+			      	<select  name="isStatement" class="input-xlarge edit_input" id="isStatement">
+			      		<option value="Y">是</option>
+                        <option value="N">否</option>
+			      	</select>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <!--div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>结算周期：</label>
+			      <div class="controls" partner-data-key="settlePeriod" data-type="select">
+			      	<select class="input-xlarge  edit_input"></select>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div-->
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>抽取发票类型：</label>
+			      <div class="controls" partner-data-key="extractType">
+			      	<input type="checkbox" value="1" disabled>专用发票&nbsp;&nbsp;
+					<input type="checkbox" value="2" disabled>普通发票&nbsp;&nbsp;
+					<input type="checkbox" value="4" disabled>作废发票&nbsp;&nbsp;
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>认证方式：</label>
+			      <div class="controls" partner-data-key="accreditationType" data-type="select">
+			      	<select class="input-xlarge  edit_input"></select>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>经营方式：</label>
+			      <div class="controls" partner-data-key="businessType" data-type="select">
+			      	<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    
+			    <!-- ------------------------------- -->
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>无税开票限额：</label>
+			      <div class="controls" partner-data-key="invoiceLimit" data-type="select">
+			      	<!--input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="true"  id="input01"-->
+					<select class="input-xlarge  edit_input" id="invoiceLimit"></select>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			   
+			    <!--  
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>有效时间起：</label>
+			      <div class="controls" partner-data-key="startDate">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,10)" data-required="true"  id="startDate" readonly>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+				 <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>有效时间止：</label>
+			      <div class="controls" partner-data-key="endDate">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,10)" data-required="true"  id="endDate" readonly>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div> 
+			    -->
+			     <!-- ------------------------------- -->
+			    <!--div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>成立时间：</label>
+			      <div class="controls" partner-data-key="createTime">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,10)" data-required="true"  id="createTime" readonly>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div-->
+			    <!--div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>所属总部：</label>
+			      <div class="controls" partner-data-key="company">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div-->
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">地址：</label>
+			      <div class="controls" partner-data-key="address">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,50)" id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+				<div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>联系人姓名：</label>
+			      <div class="controls" partner-data-key="linkMan">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+				<div class="control-group span6">
+			      <label class="control-label" for="input01">联系人QQ：</label>
+			      <div class="controls" partner-data-key="qqAccount">
+			      	<input type="text" class="input-xlarge  edit_input"   data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>联系电话：</label>
+			      <div class="controls" partner-data-key="telephone">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="phone" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>移动电话：</label>
+			      <div class="controls" partner-data-key="mobile">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="mobile" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+				<div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>财务联系人：</label>
+			      <div class="controls" partner-data-key="finContact">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>财务联系人电话：</label>
+			      <div class="controls" partner-data-key="finContactPhone">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="phone" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">邮政编码：</label>
+			      <div class="controls" partner-data-key="zipCode">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="zipCode" data-required="false"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">传真：</label>
+			      <div class="controls" partner-data-key="fax">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="fax" data-required="false"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">Email：</label>
+			      <div class="controls" partner-data-key="email">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="email" data-required="false"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			   
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01">备注：</label>
+			      <div class="controls" partner-data-key="remark">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,200)" data-required="false"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+		</fieldset>
+	</form>
+</div>	
+<div  id="step3" class="role step" name="step3" >
+	<form  class="v-form form-horizontal">
+	  	<fieldset class="edit">
+		    <div class="legend">
+		    	用户信息
+		<span class="btn-group party-view" style="float:right;display:none;"><a class="btn btn-mini btn-success edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+	    <span class="btn-group party-edit" style="float:right;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+	        </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>用户编码：</label>
+			      <div class="controls" user-data-key="userCode">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="true"  id="input01" readOnly>
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>登录帐号：</label>
+			      <input type="hidden" id="userStartCode"/>
+			      <div class="controls" user-data-key="loginName">
+			      	<input type="text" class="input-xlarge  edit_input" data-validator="text(0,30)" data-required="true"   id="loginName">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>用户姓名：</label>
+			      <div class="controls" user-data-key="userName">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="text(0,30)" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>电子邮件：</label>
+			      <div class="controls" user-data-key="email">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="email" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+			    <div class="control-group span6">
+			      <label class="control-label" for="input01"><span style="color:red">*</span>移动电话：</label>
+			      <div class="controls" user-data-key="cellphone">
+			      	<input type="text" class="input-xlarge  edit_input"  data-validator="mobile" data-required="true"  id="input01">
+					<p class="view_text"></p><p class="error_msg" ></p>
+			      </div>
+			    </div>
+		</fieldset>
+	</form>
+</div>
+<!-- 控制点不设定 -->
+<!--  
+<div class="step" name="step3" >
+	<form  class="v-form form-horizontal">
+	  	<fieldset class="edit">
+			    <div class="legend">
+			    	控制点
+					<span class="btn-group group_edit" style="float:right;"><a id="matchset" class="btn btn-success btn-mini" href="javascript:void(0);"><i class="icon-asterisk icon-white"></i>设置</a></span>
+		        </div>
+			<div class="controlPointList"></div>			 
+		</fieldset>
+	</form>
+</div>
+-->
+<div id="step2" class="step" name="step2" >
+		<form  class="form-horizontal">
+		  	<fieldset class="edit">
+			    <div class="legend">
+			    	功能权限
+			    	<span class="btn-group view_menu" style="float:right;display:none"><a class="btn btn-success edit_authority btn-mini" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		        </div>
+				 <div class="authority_list"></div>
+			</fieldset>
+		</form>
+</div>
+<div id="step4" class="step" name="step4" style="display:none;">
+		<form  class="form-horizontal">
+		  	<fieldset class="edit">
+			    <div class="legend">
+			    	企业资料
+			    	<span class="btn-group view_menu" style="float:right">
+				    	<a id="fileUpload" class="btn btn-success edit_file btn-mini" href="javascript:void(0);">
+				    		<i class="icon-white icon-edit"></i> 上传文件
+				    	</a>
+			    	</span>
+		        </div>
+				<div id="file" class="fileList"></div>
+			</fieldset>
+		</form>
+</div>
+</div>	

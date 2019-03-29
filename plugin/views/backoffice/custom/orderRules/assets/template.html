@@ -1,0 +1,223 @@
+<div class="ticketCustom">
+	<label class="partyName" style="font-size:x-small;font-weight:bold;"></label>
+	<form  class="form-inline">
+	    <div class="legend">
+	    	订单规则设定
+			<span class="group_edit" style="float:right;">
+				<a class="btn btn-success btn-mini save" style="margin-right:10px;" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a>
+				<!-- a class="btn btn-danger  btn-mini reset" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a-->
+			</span>
+        </div>
+		
+		
+		  <div class="ticketHeader">
+		  <div class="well block">订单规则<a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  <div>
+		  	    <ol>
+		  	    	<!--<li><input type="checkbox" data-key="poPartnerCreateOder"  name="poPartnerCreateOder" value="1"/>是否允许交易伙伴创建订单</li>
+		  	    	<li><input type="checkbox" data-key="poPartnerConfirmOrder"  name="poPartnerConfirmOrder" value="1" />是否允许交易伙伴确认订单</li>
+		  	    	<li><input type="checkbox" data-key="poPartyCancle"   name="poPartyCancle" value="1"/>是否允许规则制定方中止订单</li>-->
+		  	    	<div class="row-fluid">
+			
+						<div class="span12">
+							&nbsp;&nbsp;<input type="checkbox" data-key="isPartnerConfirm"  name="isPartnerConfirm" value="1" />&nbsp;&nbsp;是否允许交易伙伴确认订单
+						</div>
+						
+					</div>
+					<div class="row-fluid">
+			
+						<div class="span12">
+							&nbsp;&nbsp;<input type="checkbox" data-key="isCreateInvalid"   name="isCreateInvalid" value="1"/>&nbsp;&nbsp;是否允许规则制定方作废订单
+						</div>
+						
+					</div>
+		  	    	<div class="row-fluid">
+			
+						<div class="span12">
+							&nbsp;&nbsp;<input type="checkbox" data-key="isConfirmNum"  name="isConfirmNum" value="1"/>&nbsp;&nbsp;确认数量  
+							&nbsp;&nbsp;计划数量 × <input type="text" data-value="计划数量" data-key="confirmNumMinPer" name="confirmNumMinPer" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/>% &lt;= 确认数量   &lt;= 计划数量 × <input type="text" data-value="计划数量" data-key="confirmNumMaxPer" name="confirmNumMaxPer" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/>%
+							<p class="error_msg" ></p>
+						</div>
+						
+					</div>
+					<div class="row-fluid">
+					
+						<div class="span12">
+							&nbsp;&nbsp;<input type="checkbox" data-key="isConfirmDate"  name="isConfirmDate" value="1"/>&nbsp;&nbsp;确认交付日期 
+							&nbsp;&nbsp;创建订单日期 &lt;= 确认交付日期  &lt;= 计划日期+<input type="text" data-value="天数" data-key="confirmDateAdd" name="confirmDateAdd" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/> 天
+							<p class="error_msg" ></p>
+						</div>
+						
+					</div>
+					
+					<div class="row-fluid">
+					
+						<div class="span12">
+							&nbsp;&nbsp;<input type="checkbox" data-key="isInvalidDuring"  name="isInvalidDuring" value="1">&nbsp;&nbsp;制单日期超过 &nbsp;&nbsp;&nbsp;<input type="text" data-value="天数" data-key="invalidDateNum" name="invalidDateNum" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/>天自动作废
+						</div>
+						
+					</div>
+					<div class="row-fluid">
+					
+						<div class="span12">
+							&nbsp;&nbsp;订单生命周期：
+							&nbsp;&nbsp;<input type="checkbox" data-key="isOrderTemp"  name="isOrderTemp" checked="checked" value="1"  disabled="true">草稿&nbsp;&nbsp;——>
+							&nbsp;&nbsp;<input type="checkbox" data-key="isOrderPublished"  name="isOrderPublished" checked="checked" value="1" disabled="true">发布&nbsp;&nbsp;——>
+							&nbsp;&nbsp;<input type="checkbox" data-key="isOrderConfirm"  name="isOrderConfirm" value="1" >确认&nbsp;&nbsp;——> 
+							&nbsp;&nbsp;<input type="checkbox" data-key="isOrderShipping"  name="isOrderShipping" value="1" >预约&nbsp;&nbsp;——>
+							&nbsp;&nbsp;<input type="checkbox" data-key="isOrderDelivery"  name="isOrderDelivery" value="1" >发货&nbsp;&nbsp;——>
+							&nbsp;&nbsp;<input type="checkbox" data-key="isOrderGrn"  name="isOrderGrn" value="1" >收货
+							<br/><br/><br/>
+						</div>
+						
+					</div>
+		  	    	<!--<li><input type="checkbox" data-key="poStopOrder"   name="poStopOrder" value="1"/>是否允许同一订单包含多个门店订单</li>
+		  	    	<li><input type="checkbox" data-key="poTakeDeliverAddress"   name="poTakeDeliverAddress" value="1"/>是否允许同一订单包含多个收货地址</li>
+		  	    	<li><input type="checkbox" data-key="poItemClose"   name="poItemClose" value="1"/>允许订单行自动终止</li>-->
+		  	    	
+				</ol>
+	
+				<!--<div class="row-fluid">
+				<div class="span12"><input type="radio" value="0">制单日期早于该日期 &nbsp;&nbsp;&nbsp;<input type="text" name="po_closedate" class="input-small small datepicker"/></div>
+				
+				</div>-->
+					
+		  </div>
+		  </div>
+		  <!--
+		  <div class="ticketHeader">
+		  <div class="well block">订单关闭规则<a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  <div>
+		  	    <ol>
+					<li><input type="radio"  checked="true" data-key="poCloseRule"  name="poCloseRule" value="0"/>没有规则</li>
+					<li><input type="radio" data-key=""data-key="poCloseRule"  name="poCloseRule" value="1"/>已确认</li>
+					<li><input type="radio" data-key="poCloseRule"  name="poCloseRule" value="2"/>已拒绝</li>
+					<li><input type="radio" data-key="poCloseRule"  name="poCloseRule" value="3"/>全部已发货</li>
+					<li><input type="radio" data-key="poCloseRule"  name="poCloseRule" value="4"/>全部已收货</li>
+					<li><input type="radio" data-key="poCloseRule"  name="poCloseRule" value="5"/>全部已开票</li>
+					<li><input type="radio" data-key="poCloseRule"  name="poCloseRule" value="6"/>全部已付款</li>
+					<li><input type="radio" data-key="poCloseRule"  name="poCloseRule" value="7"/>制单日期早于该日期 &nbsp;&nbsp;&nbsp;<input type="text" data-key="poOrderCloseDate" name="poOrderCloseDate" class="input-small small datepicker"/></li>
+				</ol>
+		  </div>
+		  </div>
+		  -->
+		  <!--
+		  <div class="ticketHeader">
+		  <div class="well block">订单确认规则<a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  <div>
+		  	    
+			<div class="row-fluid">
+			
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox" data-key="poItemConfirmNum"  name="poItemConfirmNum" value="1"/>&nbsp;&nbsp;确认数量  
+					&nbsp;&nbsp;计划数量 × <input type="text" data-value="计划数量" data-key="poItemNumMin" name="poItemNumMin" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/>% &lt;= 确认数量   &lt;= 计划数量 × <input type="text" data-value="计划数量" data-key="poItemNumMax" name="poItemNumMax" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/>%
+					<p class="error_msg" ></p>
+				</div>
+				
+			</div>
+			<div class="row-fluid">
+			
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox" data-key="poItemDeliveryDate"  name="poItemDeliveryDate" value="1"/>&nbsp;&nbsp;确认交付日期 
+					&nbsp;&nbsp;创建订单日期 &lt;= 确认交付日期  &lt;= 计划日期+<input type="text" data-value="天数" data-key="poItemDeliveryDateStart" name="poItemDeliveryDateStart" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/> 天
+					<p class="error_msg" ></p>
+				</div>
+				
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox" data-key="poItemStatus"  name="poItemStatus" value="1"/>&nbsp;&nbsp;状态
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox"  data-key="poItemRemark" name="poItemRemark" value="1"/>&nbsp;&nbsp;备注
+				</div>
+			</div>
+		
+		  </div>
+		  </div>
+		  -->
+		  
+		
+		 
+	</form>
+	<!--
+	<form  class="form-inline">
+		<div class="legend">
+	    	退单规则设定
+			<span class="btn-group group_edit" style="float:right;"></span>
+        </div>
+		
+		
+		<div class="ticketHeader">
+		  <div class="well block">退单规则<a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  <div>
+		  	    <ol>
+		  	    	<li><input type="checkbox" data-key="rpoPartnerConfirmChargeback"  name="rpoPartnerConfirmChargeback" value="1"/>是否允许交易伙伴确认退单</li>
+		  	    	<li><input type="checkbox"  data-key="rpoPartyCancle" name="rpoPartyCancle" value="1"/>是否允许规则制定方中止退单</li>
+		  	    	<li><input type="checkbox" data-key="rpoStopOrder"  name="rpoStopOrder" value="1"/>是否允许同一退单包含多个门店订单</li>
+		  	    	<li><input type="checkbox" data-key="rpoTakeDeliverAddress"  name="rpoTakeDeliverAddress" value="1"/>是否允许同一退单包含多个收货地址</li>
+		  	    	<li><input type="checkbox" data-key="rpoItemClose"  name="rpoItemClose" value="1"/>允许退单行自动终止</li>
+		  	    	
+				</ol>
+		  </div>
+		  </div>
+		<div class="ticketHeader">
+		  <div class="well block">退单关闭规则<a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  <div>
+		  	    <ol>
+					<li><input type="radio" checked="true" data-key="rpoCloseRule" name="rpoCloseRule" value="0"/>没有规则</li>
+					<li><input type="radio"  data-key="rpoCloseRule" name="rpoCloseRule" value="1"/>已确认</li>
+					<li><input type="radio" data-key="rpoCloseRule" name="rpoCloseRule" value="2"/>已拒绝</li>
+					<li><input type="radio" data-key="rpoCloseRule" name="rpoCloseRule" value="3"/>全部已发货</li>
+					<li><input type="radio" data-key="rpoCloseRule" name="rpoCloseRule" value="4"/>全部已收货</li>   
+					<li><input type="radio" data-key="rpoCloseRule" name="rpoCloseRule" value="5"/>全部已开票</li>
+					<li><input type="radio" data-key="rpoCloseRule" name="rpoCloseRule" value="6"/>全部已付款</li>
+					<li><input type="radio" data-key="rpoCloseRule" name="rpoCloseRule" value="7"/>制单日期早于该日期 &nbsp;&nbsp;&nbsp;<input type="text" data-key="rpoOrderCloseDate" name="rpoOrderCloseDate" class="input-small small datepicker"/></li>
+				</ol>
+		  </div>
+		  </div>
+		  
+		  <div class="ticketHeader">
+		  <div class="well block">退单确认规则<a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  <div>
+		  	    
+			<div class="row-fluid">
+			
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox" data-key="rpoItemConfirmNum" name="rpoItemConfirmNum" value="1"/>&nbsp;&nbsp;确认数量  
+					&nbsp;&nbsp;计划数量 × <input type="text" data-value="计划数量" data-key="rpoItemNumMin" name="rpoItemNumMin" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/>% &lt;= 确认数量   &lt;= 计划数量 × <input type="text" data-value="计划数量" data-key="rpoItemNumMax" name="rpoItemNumMax" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/>%
+					<p class="error_msg" ></p>
+				</div>
+				
+			</div>
+			<div class="row-fluid">
+			
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox" data-key="rpoItemDeliveryDate" name="rpoItemDeliveryDate" value="1"/>&nbsp;&nbsp;确认交付日期 
+					&nbsp;&nbsp;创建订单日期 &lt;= 确认交付日期  &lt;= 计划日期+<input type="text" data-value="天数" data-key="rpoItemDeliveryDateStart" name="rpoItemDeliveryDateStart" class="input-small" style="width: 40px" data-validator="integer" data-required="true"/> 天
+					<p class="error_msg" ></p>
+				</div>
+				
+			</div>
+			
+			<div class="row-fluid">
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox" data-key="rpoItemStatus"  name="rpoItemStatus" value="1"/>&nbsp;&nbsp;状态
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					&nbsp;&nbsp;<input type="checkbox" data-key="rpoItemRemark"  name="rpoItemRemark" value="1"/>&nbsp;&nbsp;备注
+				</div>
+			</div>
+			
+		
+		  </div>
+		  </div>
+		 <span class="group_edit" style="float:right;"><a class="btn btn-success btn-mini save" style="margin-right:10px;" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn btn-danger  btn-mini reset" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+	</form>
+	-->
+
+</div>

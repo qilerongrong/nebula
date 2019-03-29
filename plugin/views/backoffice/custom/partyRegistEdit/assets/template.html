@@ -1,0 +1,400 @@
+<div>
+    <div class="step role" name="step1">
+        <div class="v-form form-horizontal">
+            <fieldset class="view">
+                <div class="legend">
+                    基本信息<span class="btn-group party_group_view" style="float:right;"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i>编辑</a></span>
+                    <span class="btn-group party_group_edit" style="float:right;display:none;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i>保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+                </div>
+                    <input type="hidden" name="id" id="id" />
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>平台编码：
+                    </label>
+                    <div class="controls" party-data-key="platformNo">
+                        <input id="platformNo" type="text" class="input-xlarge  edit_input" data-validator="text(0,20)" data-required="true" id="platformNo" readonly>
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">
+					<label class="control-label" for="input01"><span
+						style="color: red">*</span>父平台编码：</label>
+					<div class="controls" party-data-key="parentPlatformNo">
+						<p class="view_text">
+                        </p>
+                    </div>
+				</div>
+				 <div class="control-group span6">
+					<label class="control-label" for="input01">复制平台编码：</label>
+					<div class="controls" party-data-key="copyPlatformNo">
+                        <input id="copyPlatformNo" type="text" class="input-xlarge  edit_input" data-validator="text(0,20)" data-required="false" readonly>
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+				</div>
+                <!-- 
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>主体编码：
+                    </label>
+                    <div class="controls" party-data-key="partyCode">
+                        <input type="text" class="input-xlarge  edit_input" data-validator="text(0,20)" data-required="true" id="input01" readonly>
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                 -->
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>主体类型：
+                    </label>
+                    <div class="controls" party-data-key="businessRole" party-data-type="select">
+                        <select name="businessRole" class="input-xlarge edit_input" id="businessRole" readonly>
+                            <option value="BUYER">中心企业</option>
+                            <!-- option value="SELLER">供应商</option-->
+                        </select>
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>主体名称：
+                    </label>
+                    <div class="controls" party-data-key="partyName">
+                        <input type="text" class="input-xlarge edit_input" data-validator="text(0,30)" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        	注册资金：
+                    </label>
+                    <div class="controls" party-data-key="registeFunds" party-data-type="number">
+                        <input type="text" class="input-xlarge edit_input" data-validator="price(0,30)" data-required="false" id="input01" maxlength=10>
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>法人代表：
+                    </label>
+                    <div class="controls" party-data-key="partner">
+                        <input type="text" class="input-xlarge edit_input" data-validator="text(0,30)" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>公司性质：
+                    </label>
+                    <div class="controls" party-data-key="companyCharacter" party-data-type="select">
+                        <select name="companyCharacter" class="input-xlarge edit_input" id="companyCharacter">
+                            <option value="1">事业单位</option>
+							<option value="2">企业</option>
+							<option value="3">其它</option>
+                        </select>
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>地址：
+                    </label>
+                    <div class="controls" party-data-key="address">
+                        <input type="text" class="input-xlarge edit_input" data-validator="text(0,50)" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>联系电话：
+                    </label>
+                    <div class="controls" party-data-key="telephone">
+                        <input type="text" class="input-xlarge edit_input" data-validator="phone" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>移动电话：
+                    </label>
+                    <div class="controls" party-data-key="mobile">
+                        <input type="text" class="input-xlarge edit_input" data-validator="mobile" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>邮政编码：
+                    </label>
+                    <div class="controls" party-data-key="zipCode">
+                        <input type="text" class="input-xlarge edit_input" data-validator="zipCode" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>传真：
+                    </label>
+                    <div class="controls" party-data-key="fax">
+                        <input type="text" class="input-xlarge edit_input" data-validator="fax" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>Email：
+                    </label>
+                    <div class="controls" party-data-key="email">
+                        <input type="text" class="input-xlarge edit_input" data-validator="email" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">    
+		      		<label class="control-label" for="input01"><span style="color:red">*</span>有效开始时间：</label>
+			    	<div class="controls" party-data-key="validStartDate">
+			        <input type="text" class="input-xlarge edit_input" data-validator="text(0,10)" data-required="true"  id="validStartDate">
+					<p class="view_text"><p class="error_msg" ></p>
+			      	</div>
+			    </div>
+			   
+                <div class="control-group span6">  	
+					<label class="control-label" for="input01"><span style="color:red">*</span>有效结束时间：</label>
+				      <div class="controls" party-data-key="validEndDate">
+				        <input type="text" class="input-xlarge edit_input" data-validator="text(0,10)" data-required="true"  id="validEndDate">
+						<p class="view_text"><p class="error_msg" ></p>
+				      </div>
+				</div>
+				<div class="control-group span6">     
+					<label class="control-label" for="input01"><span style="color:red">*</span>用户头字母：</label>
+				  	<div class="controls" party-data-key="userHeader">
+			       		<input type="text" class="input-xlarge edit_input" data-validator="text(0,8)" data-required="true"  name="userHeader" id="userHeader">
+                        <p class="view_text"></p>
+                        <p class="error_msg">
+			        </div>
+			    </div>
+				<div class="control-group span12">
+					<label class="control-label" for="input01">区域：</label>
+                    <div class="controls" party-data-key="regionCode">
+                        <p class="view_text">
+                        </p>
+                    </div>
+				</div>
+				
+                <!-- div class="control-group span6">      
+		      		<label class="control-label" for="input01"><span style="color:red">*</span>省份：</label>
+			        <div class="controls" party-data-key="provinceId" party-data-type="select">
+			       		<select name="provinceId" class="input-xlarge edit_input"></select>
+						<p class="view_text"></p>
+			        </div>
+			   </div>
+                <div class="control-group span6">     
+					<label class="control-label" for="input01"><span style="color:red">*</span>城市：</label>
+				  	<div class="controls" party-data-key="cityId" party-data-type="select">
+			       		<select name="cityId" class="input-xlarge edit_input"></select>
+						<p class="view_text"></p>
+			        </div>
+			    </div> 
+			    <div class="control-group span6">
+					<label class="control-label" for="input01"><span
+						style="color: red">*</span>县：</label>
+					<div class="controls" party-data-key="countyId" party-data-type="select">
+						<select name="countyId" class="input-xlarge edit_input"></select>
+						<p class="view_text"></p>
+					</div>
+				</div-->   
+			    <!-- div class="control-group span6">
+					<label class="control-label" for="input01"><span style="color:red">*</span>主体版本：</label>
+					<div class="controls" party-data-key="partyVersion" party-data-type="select">
+					    <select name="partyVersion" class="input-xlarge edit_input" id="partyVersion">
+				        </select>
+				        <p class="view_text"></p>
+			        </div>
+				</div-->
+			    <div class="control-group span6">     
+					<label class="control-label" for="input01"><span style="color:red">*</span><span title="企业Logo尺寸建议像素180*50,大小不要超过150K">企业LOGO：</span></label>
+				  	<div class="controls" party-data-key="logo">
+			       		  <input id="uploadBtn" type="button" class="fileupload btn btn-success btn-mini" value="上传LOGO"/>
+                        <p class="view_text"></p>
+                        <p class="error_msg">
+			        </div>
+			    </div>
+			    <div class="control-group span6">     
+					<label class="control-label" for="input01"><span style="color:red">*</span><span title="打印Logo尺寸建议像素1500*300,大小不要超过150K">打印LOGO：</span></label>
+				  	<div class="controls" party-data-key="printLogo">
+			       		  <input id="printLogo" type="button" class="printFileupload btn btn-success btn-mini" value="上传LOGO"/>
+                        <p class="view_text"></p>
+                        <p class="error_msg">
+			        </div>
+			    </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="step" name="step2">
+        <form class="form-horizontal">
+            <fieldset class="edit">
+                 <div class="legend">
+                 	功能权限
+			    	<span class="btn-group view_menu" style="float:right;display:none"><a class="btn btn-success edit_authority btn-mini" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		        </div>
+                <div id="step2-data"></div>
+            </fieldset>
+        </form>
+    </div>
+    <!-- 
+    <div class="step" name="step3">
+        <form class="v-form form-horizontal">
+            <fieldset class="edit">
+                 <div class="legend">
+                 	销方权限
+			    	<span class="btn-group view_menu" style="float:right;display:none"><a class="btn btn-success edit_authority_partner btn-mini" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a></span>
+		        </div>
+                <div id="step3-data"></div>
+            </fieldset>
+        </form>
+    </div>
+     -->
+    <div class="step" name="step4">
+		<form class="v-form form-horizontal">
+			<fieldset class="edit">
+				<div class="legend">
+                 	经销权限
+		        </div>
+				<div id="step4-data"></div>
+			</fieldset>
+		</form>
+	</div>
+    <div class="step role" name="step5">
+        <form class="v-form form-horizontal">
+            <fieldset class="view">
+                <div class="legend">
+                    <span>管理员</span>
+                    <span class="btn-group" style="float:right;margin-left:5px"><a class="btn btn-success  btn-mini resetPassword" href="javascript:void(0);"><i class="icon-white icon-ok"></i>重置密码</a><a class="btn btn-success  btn-mini editPassword" href="javascript:void(0);"><i class="icon-white icon-edit"></i>修改密码</a></span>
+                    <span class="btn-group user_group_view" style="float:right;"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i>编辑</a></span>
+                    <span class="btn-group user_group_edit" style="float:right;display:none;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i>保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+                </div>
+                <input type="hidden" id='userid' />
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>用户编码：
+                    </label>
+                    <div class="controls" user-data-key="userCode">
+                        <input type="text" class="input-xlarge  edit_input" data-validator="text(0,30)" data-required="true" id="input01" Readonly>
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>登录帐号：
+                    </label>
+                    <div class="controls" user-data-key="loginName">
+                        <input type="text" class="input-xlarge  edit_input" data-validator="text(0,30)" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <!-- div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>密码：
+                    </label>
+                    <div class="controls" user-data-key="password">
+			      		<input type="password" class="input-xlarge  edit_input" data-validator="text(0,100)" data-required="true"  id="inputPassword">
+			      		<p class="view_text"></p>
+						<p class="error_msg" ></p>
+		      		</div>
+                </div>
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>确认密码：
+                    </label>
+                    <div class="controls" user-data-key="password2">
+			      		<input type="password" class="input-xlarge  edit_input" data-validator="text(0,100)" data-required="true"  id="inputPassword2">
+			      		<p class="view_text"></p>
+						<p class="error_msg" ></p>
+		      		</div>
+                </div-->
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>用户姓名：
+                    </label>
+                    <div class="controls" user-data-key="userName">
+                        <input type="text" class="input-xlarge  edit_input" data-validator="text(0,30)" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>电子邮件：
+                    </label>
+                    <div class="controls" user-data-key="email">
+                        <input type="text" class="input-xlarge  edit_input" data-validator="email" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+                <div class="control-group span6">
+                    <label class="control-label" for="input01">
+                        <span style="color:red">*</span>移动电话：
+                    </label>
+                    <div class="controls" user-data-key="cellphone">
+                        <input type="text" class="input-xlarge  edit_input" data-validator="mobile" data-required="true" id="input01">
+                        <p class="view_text">
+                        </p>
+                        <p class="error_msg">
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>

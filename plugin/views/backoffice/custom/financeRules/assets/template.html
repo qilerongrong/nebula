@@ -1,0 +1,270 @@
+<div class="ticketCustom">
+	<label class="partyName" style="font-size:x-small;font-weight:bold;"></label>
+	<div  class="form-inline">
+	    <div class="legend">
+	    	财务规则设定
+			<span class="group_edit" style="float:right;"><a class="btn btn-success btn-mini save" style="margin-right:10px;" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><!-- a class="btn btn-danger  btn-mini reset" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a--></span>
+        </div>
+        <div class="ticketHeader manageType">
+		  	<div class="well block businessMethod">经营方式<a href="javascript:void(0);" class="help" style="vertical-align:middle;margin:2px 2px;"><i class="icon-question-sign"></i></a><a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  	<div class="container-fluid">
+		  		<div class="row-fluid">
+				  	<div class="businessContent span6">
+				  		
+				  	</div>
+				  	<div class="businessGrid span6">
+				  		
+				  	</div>
+			  	</div>
+		  	</div>
+		</div>
+		<div class="ticketHeader balanceFlow">
+		  	<div class="well block">结算流程设置<a href="javascript:void(0);" class="help" style="vertical-align:middle;margin:2px 2px;"><i class="icon-question-sign"></i></a><a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  	<div class="container-fluid">
+		  		<div>
+		  			<select class="flowList">
+		  			     <option value="1">标准流程1</option>
+						 <option value="2">标准流程2</option>
+						 <option value="3">标准流程3</option>
+						 <option value="4">标准流程4</option>
+				    </select>
+					<span>点击各流程节点可进行参数配置。</span>
+				</div>
+				<div class="flow flow1">
+					<div class="left">
+						<button class="node btn btn-primary">票单匹配</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">扫描匹配</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">发票认证</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">匹配过账</button>
+					</div>
+					<div class="params">
+						<div class="args match" style="display:block">
+							<div><span class="arg">票单匹配单据状态：</span><select name="confirm"><option value="1">需确认</option><option value="0">不需确认</option></select></div>
+							<div><span class="arg">票单匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+							<div><span class="arg">匹配方式：</span><select name="type"><option value="1">蓝票</option><option value="2">蓝红混合</option><option value="3">蓝红分别</option></select></div>
+						    <div><span class="arg">是否红通匹配：</span><select name="matchredntc"><option value="1">是</option><option value="0">否</option></select></div>
+							<div><span class="arg">匹配金额：</span><input type="checkbox" name="beforetax"  value="1"/>未税金额<input type="checkbox" class="input-small" name="tax" class="input-small" value="1"/>税额<input type="checkbox" class="input-small" name="sum" value="1"/>价税合计</div>
+						</div>
+						<div class="args scan">
+							<div><span class="arg">扫描匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+						    <div><span class="arg">扫描匹配容差：</span><input type="text" name="tolerance" /></div>
+							<div><span class="arg">税额容差：</span><input type="text" name="taxtolerance" /></div>
+							<div><span class="arg">密文：</span><input type="text" name="ciphertext" class="input-mini"/>%</div>
+						</div>
+						<div class="args auth">
+							<div><span class="arg">认证触发方式：</span><input type="checkbox" name="manual" value="1"/>手动<input type="checkbox" name="auto" value="1"/>自动</div>
+							<div><span class="arg">提前认证：</span><input type="checkbox" name="preauth" value="1" checked/></div>
+						</div>
+						<div class="args post">
+							<div><span class="arg">过账触发方式：</span><input type="checkbox" name="manual" value="1"/>手动<input type="checkbox" name="auto" value="1"/>自动</div>
+						</div>
+					</div>
+				</div>
+				<div class="flow flow2 well">
+					<div class="left">
+						<button class="node btn btn-primary">票单匹配</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">扫描匹配</button>
+						<span class="icon-arrow-right"></span>
+						<button class="node btn">匹配过账</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">发票认证</button>
+					</div>
+					<div class="params">
+						<div class="args match" style="display:block">
+							<div><span class="arg">票单匹配单据状态：</span><select name="confirm"><option value="1">需确认</option><option value="0">不需确认</option></select></div>
+							<div><span class="arg">票单匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+						    <div><span class="arg">匹配方式：</span><select name="type"><option value="1">蓝票</option><option value="2">蓝红混合</option><option value="3">蓝红分别</option></select></div>
+						    <div><span class="arg">是否红通匹配：</span><select name="matchredntc"><option value="1">是</option><option value="0">否</option></select></div>
+							<div><span class="arg">匹配金额：</span><input type="checkbox" name="beforetax"  value="1"/>未税金额<input type="checkbox" class="input-small" name="tax" class="input-small" value="1"/>税额<input type="checkbox" class="input-small" name="sum" value="1"/>价税合计</div>
+						</div>
+						<div class="args scan">
+							<div><span class="arg">扫描匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+						    <div><span class="arg">扫描匹配容差：</span><input type="text" name="tolerance" /></div>
+							<div><span class="arg">税额容差：</span><input type="text" name="taxtolerance" /></div>
+							<div><span class="arg">密文：</span><input type="text" name="ciphertext" class="input-mini"/>%</div>
+						</div>
+						<div class="args post">
+							<div><span class="arg">过账触发方式：</span><input  type="checkbox" name="manual" value="1"/>手动<input type="checkbox" name="auto" value="1"/>自动</div>
+							<div><span class="arg">提前过账：</span><input type="checkbox" name="prepost" value="1" checked/></div>
+						</div>
+						<div class="args auth">
+							<div><span class="arg">认证触发方式：</span><input type="checkbox" name="manual" value="1" style="margin:0 5px;vertical-align:middle;"/>手动<input type="checkbox" name="auto" style="margin:0 5px;vertical-align:middle;" value="1"/>自动</div>
+							<div><span class="arg">提前认证：</span><input type="checkbox" name="preauth" value="1" checked/></div>
+						</div>
+					</div>
+				</div>
+				<div class="flow flow3 well">
+					<div class="left">
+						<button class="node btn btn-primary">票单匹配</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">扫描匹配</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">匹配过账</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">发票认证</button>
+					</div>
+					<div class="params">
+						<div class="args match" style="display:block">
+							<div><span class="arg">票单匹配单据状态：</span><select name="confirm"><option value="1">需确认</option><option value="0">不需确认</option></select></div>
+							<div><span class="arg">票单匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+						    <div><span class="arg">匹配方式：</span><select name="type"><option value="1">蓝票</option><option value="2">蓝红混合</option><option value="3">蓝红分别</option></select></div>
+						    <div><span class="arg">是否红通匹配：</span><select name="matchredntc"><option value="1">是</option><option value="0">否</option></select></div>
+							<div><span class="arg">匹配金额：</span><input type="checkbox" name="beforetax"  value="1"/>未税金额<input type="checkbox" class="input-small" name="tax" class="input-small" value="1"/>税额<input type="checkbox" class="input-small" name="sum" value="1"/>价税合计</div>
+						</div>
+						<div class="args scan">
+							<div><span class="arg">扫描匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+							<div><span class="arg">扫描匹配容差：</span><input type="text" name="tolerance" /></div>
+							<div><span class="arg">税额容差：</span><input type="text" name="taxtolerance" /></div>
+							<div><span class="arg">密文：</span><input type="text" name="ciphertext" class="input-mini"/>%</div>
+						</div>
+						<div class="args post">
+							<div><span class="arg">过账触发方式：</span><input type="checkbox" style="margin:0 5px;vertical-align:middle;" name="manual" value="1"/>手动<input type="checkbox" style="margin:0 5px;vertical-align:middle;" name="auto" value="1"/>自动</div>
+							<div><span class="arg">提前过账：</span><input type="checkbox" name="prepost" value="1" checked/></div>
+						</div>
+						<div class="args auth">
+							<div><span class="arg">认证触发方式：</span><input type="checkbox" style="margin:0 5px;vertical-align:middle;" name="manual" value="1"/>手动<input type="checkbox" style="margin:0 5px;vertical-align:middle;" name="auto" value="1"/>自动</div>
+							<div><span class="arg">提前认证：</span><input type="checkbox" name="preauth" value="1" checked/></div>
+						</div>
+					</div>
+				</div>
+				<div class="flow flow4 well">
+					<div class="left">
+						<button class="node btn btn-primary">票单匹配</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">匹配过账</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">扫描匹配</button>
+						<span class="icon-arrow-down"></span>
+						<button class="node btn">发票认证</button>
+					</div>
+					<div class="params">
+						<div class="args match" style="display:block">
+							<div><span class="arg">票单匹配单据状态：</span><select name="confirm"><option value="1">需确认</option><option value="0">不需确认</option></select></div>
+							<div><span class="arg">票单匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+						    <div><span class="arg">匹配方式：</span><select name="type"><option value="1">蓝票</option><option value="2">蓝红混合</option><option value="3">蓝红分别</option></select></div>
+						    <div><span class="arg">是否红通匹配：</span><select name="matchredntc"><option value="1">是</option><option value="0">否</option></select></div>
+							<div><span class="arg">匹配金额：</span><input type="checkbox" name="beforetax"  value="1"/>未税金额<input type="checkbox" class="input-small" name="tax" class="input-small" value="1"/>税额<input type="checkbox" class="input-small" name="sum" value="1"/>价税合计</div>
+						</div>
+						<div class="args post">
+							<div><span class="arg">过账触发方式：</span><input type="checkbox" name="manual" value="1"/>手动<input type="checkbox" name="auto" value="1"/>自动</div>
+						</div>
+						<div class="args scan">
+							<div><span class="arg">扫描匹配审核：</span><select name="audit"><option value="0">无需审核</option><option value="1">平台审核</option><option value="2">接口审核</option></select></div>
+						    <div><span class="arg">扫描匹配容差：</span><input type="text" name="tolerance" /></div>
+							<div><span class="arg">税额容差：</span><input type="text" name="taxtolerance" /></div>
+							<div><span class="arg">密文：</span><input type="text" name="ciphertext" class="input-mini"/>%</div>
+						</div>
+						<div class="args auth">
+							<div><span class="arg">认证触发方式：</span><input type="checkbox" name="manual" style="margin:0 5px;vertical-align:middle;" value="1"/>手动<input type="checkbox" name="auto" style="margin:0 5px;vertical-align:middle;" value="1"/>自动</div>
+							<div><span class="arg">提前认证：</span><input type="checkbox" name="preauth" value="1" checked/></div>
+						</div>
+					</div>
+				</div>
+		  	</div>
+		</div>
+		<!-- div class="ticketHeader">
+			<div class="well block accountRule">结算单规则<a href="javascript:void(0);" class="help" style="vertical-align:middle;margin:2px 2px;"><i class="icon-question-sign"></i></a><a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+			<div>
+				<div class="row-fluid">
+					<div class="span12">
+					  	<span>是否使用结算单</span>
+					  	<input type="checkbox" data-key="isUsedAccount"  name="isUsedAccount" value="1"/>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+					  	<span class="3">结算单生成范围</span>
+					  	<span class="3"><input type="radio"  checked="true" data-key="accountClassify"  name="accountClassify" value="1"/>按公司结算</span>
+						<span class="3"><input type="radio" data-key=""data-key="accountClassify"  name="accountClassify" value="2"/>按门店结算</span>
+					</div>
+				</div>
+				<div class="row-fluid">
+				  	<div class="span12">
+				  		<span class="3">结算单生成方</span>
+						<span class="3"><input type="checkbox" data-key="accountCreator"  name="accountCreator" value="1"/>中心企业</span>
+						<span class="3"><input type="checkbox" data-key="accountCreator"  name="accountCreator" value="2"/>供应商</span>
+					</div>	
+				</div>
+			    </div>
+		  </div-->
+		  
+		  <div class="ticketHeader">
+		  <div class="well block matchRule">匹配规则<a href="javascript:void(0);" class="help" style="vertical-align:middle;margin:2px 2px;"><i class="icon-question-sign"></i></a><a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  <div>
+		  	<!-- div class="row-fluid">
+				  <div class="span12">
+				  	    <span>是否匹配审核</span>
+				  	    <input type="checkbox" data-key="isMatchAudit"  name="isMatchAudit" value="1"/>
+				  </div>
+			</div>
+			<div class="row-fluid">
+				  <div class="span12">
+				  	    <span>是否过账审核</span>
+				  	    <input type="checkbox" data-key="isPostAudit"  name="isPostAudit" value="1"/>
+				  </div>
+			</div>
+	  		<div class="row-fluid">
+	  			<div class="span12">
+		  			<span class="3">结算周期定义</span>
+					<span class="3"><input type="radio"  checked="true" data-key="defineMonth"  name="defineMonth" value="1"/>月初到月末</span>
+					<span class="3"><input type="radio" data-key=""data-key="defineMonth"  name="defineMonth" value="2"/>月中</span>
+				</div>
+			</div>
+		  
+			<div class="row-fluid">
+				<div class="span12">
+					<span>结算终止日</span>
+					<input type="text" data-value="结算终止日" data-key="accountDay" name="accountDay" class="input input-mini" data-validator="integer" data-required="true"/>日
+					<span class="error_msg" style="color:red;"></span>
+				</div>
+			</div-->
+			<div class="row-fluid">
+				<div class="span12">
+					<span>自动匹配容差</span>
+					<input type="text" data-value="自动匹配容差" data-key="autoPercent" name="autoPercent" class="input input-mini" data-validator="integer" data-required="true"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;下限&nbsp;<input type="text" data-value="自动匹配容差下限" data-key="autoMinDiff" name="autoMinDiff" class="input input-mini" data-validator="integer" data-required="true"/>元
+					&nbsp;&nbsp;&nbsp;&nbsp;上限&nbsp;<input type="text" data-value="自动匹配容差上限" data-key="autoMaxDiff" name="autoMaxDiff" class="input input-mini" data-validator="integer" data-required="true"/>元
+					<span class="error_msg" style="color:red;width:200px"></span>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<span>手动匹配容差</span>
+					<input type="text" data-value="手动匹配容差" data-key="manualPercent" name="manualPercent" class="input input-mini" data-validator="integer" data-required="true"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;下限&nbsp;<input type="text" data-value="手动匹配容差下限" data-key="manualMinDiff" name="manualMinDiff" class="input input-mini" data-validator="integer" data-required="true"/>元
+					&nbsp;&nbsp;&nbsp;&nbsp;上限&nbsp;<input type="text" data-value="手动匹配容差上限" data-key="manualMaxDiff" name="manualMaxDiff" class="input input-mini" data-validator="integer" data-required="true"/>元
+					<span class="error_msg" style="color:red;width:200px"></span>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<span>强制匹配容差</span>
+					<input type="text" data-value="强制匹配容差" data-key="forcePercent" name="forcePercent" class="input input-mini" data-validator="integer" data-required="true"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;下限&nbsp;<input type="text" data-value="强制匹配容差下限" data-key="forceMinDiff" name="forceMinDiff" class="input input-mini" data-validator="integer" data-required="true"/>元
+					&nbsp;&nbsp;&nbsp;&nbsp;上限&nbsp;<input type="text" data-value="强制匹配容差上限" data-key="forceMaxDiff" name="forceMaxDiff" class="input input-mini" data-validator="integer" data-required="true"/>元
+					<span class="error_msg" style="color:red;width:200px"></span>
+				</div>
+			</div>
+		  </div>
+		  </div>
+		<div class="ticketHeader invoiceRule">
+		  	<div class="well block invoiceRemarkRule">发票备注规则<a href="javascript:void(0);" class="help" style="vertical-align:middle;margin:2px 2px;"><i class="icon-question-sign"></i></a><a href="#" class="toggle" title="收起"><i class="icon-chevron-up" ></i></a></div>
+		  	<div>
+			  	<div class="row-fluid">
+					<div class="span12 invoiceRemarkRuleContainer">
+						<span>发票备注选项</span>
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12 redInvoiceRemarkRuleContainer">
+						<span>红票备注选项</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

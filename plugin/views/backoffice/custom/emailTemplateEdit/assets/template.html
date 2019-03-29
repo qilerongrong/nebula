@@ -1,0 +1,55 @@
+<div class="post">
+	<form  class="form-horizontal v-form">
+		<fieldset class="view">
+			<div class="legend">
+				消息模板
+				<span class="btn-group group_view" style="float:right"><a class="btn btn-success  btn-mini edit" href="javascript:void(0);"><i class="icon-white icon-edit"></i> 编辑</a><a class="btn cancel btn-danger  btn-mini back" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 返回</a></span>
+				<span class="btn-group group_edit" style="float:right;display:none;"><a class="btn save btn-success btn-mini" href="javascript:void(0);"><i class="icon-check icon-white"></i> 保存</a><a class="btn cancel btn-danger  btn-mini" href="javascript:void(0);"><i class="icon-remove icon-white"></i> 取消</a></span>
+
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">名称：</label>
+				<div class="controls" data-key="name">
+					<input style="width: 80%" type="text" class="input-xlarge  edit_input" id="input01" data-validator="text(0,100)" data-required="true" >
+					<p class="view_text"></p><p class="error_msg" ></p>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">描述：</label>
+				<div class="controls" data-key="description">
+					<input style="width: 80%" type="text" class="input-xlarge  edit_input" data-validator="text(0,100)" data-required="true"  id="input01" >
+					<p class="view_text"></p><p class="error_msg" ></p>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">主题：</label>
+				<div class="controls" data-key="title">
+					<input style="width: 80%" type="text" class="input-xlarge  edit_input" id="input01" data-validator="text(0,100)" data-required="true" >
+					<p class="view_text"></p><p class="error_msg" ></p>
+				</div>
+			</div>
+			
+			<div class="control-group" id="selected">
+				<label class="control-label" for="input01">选择内容：</label>
+				<div class="controls">
+					<!--select id="customType" name="customType">
+						<option value="">请选择</option>
+					</select-->
+					<select id="custom" name="custom">
+						<option value="">请选择</option>
+					</select>
+					<span id="content" style="width:10%"></span>
+					<!--span id="copy" class="copy" style="display:none;width:10%">复制</span-->
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">内容：</label>
+				<div class="controls" data-key="content">
+					<div  class="contract_con" style="width: 80%"></div>
+					<p class="view_text"></p>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+
+</div>
